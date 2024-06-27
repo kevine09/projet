@@ -1,0 +1,170 @@
+/* Utilisation de fonts personnalises*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body{
+    margin: 0;
+    font-family: "Lato", "Open Sans", sans-serif;
+}
+.wrapper {
+    max-width: 1200px; /*Fixer la taille de la zone texte*/
+    margin: 0 auto;
+}
+
+header .wrapper,nav ul {
+    display: flex; /*Utiliser en flexbox*/
+    justify-content: space-between; /*Allignement horizontal du contenu*/
+}
+
+ul{
+    padding: 0;
+}
+
+header .wrapper {
+    align-items: center; /*Alignement veritical du contenu*/
+}
+
+header a {   /* Tous les liens qui se trouvent dans le header*/
+    text-decoration:overline;  /* soulignage des liens*/
+    color: #fff;
+    text-transform: capitalize;  /*Premiere lettre en majuscule*/
+    text-align: right;
+}
+
+header li {              /*Tous les elements de liste dans le header*/
+    list-style: none;    /*Enlever les points devant les elements de liste*/
+    margin-right: 25px;  /* Espace entre les elements de liste*/
+    padding: auto;
+    text-align: right;
+}
+
+.logo a {    /* Tous les liens dans le div du logo*/
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.logo span {
+    color: rgb(211, 120, 131);
+}
+header {
+    background-color: black;
+}
+.search-section{ /*la zone de reserche de recettes*/
+    text-align: right;
+    padding: 5px;
+    margin-right: 25px;
+}
+    
+    .icon{
+        width: 15px; /* Ajustez la taille de l'icône selon les besoins */
+        height: 15px; /* Ajustez la taille de l'icône selon les besoins */
+        margin-right: 0.1rem; /* Espace entre l'icône et le texte */
+        vertical-align: middle; /* Centre verticalement l'icône avec le texte */
+    }
+    
+    h2{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        color: rgb(211, 120, 131);
+    }
+    .carousel { /*animations avec les images*/
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .carousel-container {
+        display: flex;
+        width: 50%;
+        animation: slide 15s infinite;
+    }
+    
+    .carousel-container img {
+        width: 50%;
+        height: auto;
+    }
+    
+    @keyframes slide {
+        0% { transform: translateX(0); }
+        33.33% { transform: translateX(-100%); }
+        66.66% { transform: translateX(-200%); }
+        100% { transform: translateX(0); }
+    }
+    /* Catégories de recettes */
+.categories {
+    padding: 50px 20px;
+    background: #f2f2f2;
+    text-align: center;
+}
+
+.category {
+    margin: 20px 0;
+}
+
+/* Recettes populaires */
+.popular-recipes {
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+}
+/* Section Découvrir d'autres recettes */
+.discover-recipes {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+}
+
+.discover-recipes h2 {
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(211, 120, 131);
+}
+
+.discover-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgb(211, 120, 131);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Lato", "Open Sans", sans-serif;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.discover-button:hover {
+    background: rgb(180, 100, 110);
+}
+
+/* Newsletter */
+.newsletter {
+    background: #333;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+    
+    footer {
+        background: #333;
+        color: #fff;
+        text-align: right;
+        padding: 1rem 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: auto; /* Ajustez la hauteur automatiquement */
+    }
+    
+    .bas {
+        font-size: 1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        display: flex;
+        justify-content: space-between; /* Espacement entre les éléments */
+        flex-wrap: wrap; /* Pour gérer les petits écrans */
+        padding: 0 20px;
+    }
+    
+    footer .bas p {
+        margin: 5px 10px;
+    }
