@@ -6,32 +6,64 @@
     <title>Recettes</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
-    <div class="wrapper">
-        <div class="logo"><a href="#">Delices <span>Gourmets</span></a></div>
-        <nav>
-            <ul><!-- les onglets ou liens de navigation dans le header ici sont les memes que pour 
-                le fichier index pour maintenir la coherence dans le css-->
-                <li> <a href="index.html"> Acceuil</a></li>
-                <li><a href="recipe.html">Nos plats</a></li>
-                <li> <a href="Aboutus.html"> A propos de nous</a></li>
-                <li><a href="contact.html">contact</a></li>
-                <li><a href="compte.html" class="compte-link">
-                    <img src="c:\Users\Administrator\Pictures\image.png" alt="Compte" class="icon">
-                    Compte
-                </a></li>
-            </ul>
-        </nav>
-    </div><!-- section recherche d'une recette-->
-    <section class="search-section">
-        <input type="text" id="searchBar" placeholder="Rechercher une recette...">
-    </section>
+    <header>
+        <div class="wrapper">
+            <div class="logo"><a href="#">Delices <span>Gourmets</span></a></div>
+            <nav>
+                <ul><!-- les onglets ou liens de navigation dans le header ici sont les memes que pour 
+                    le fichier index pour maintenir la coherence dans le css-->
+                    <li> <a href="index.html"> Acceuil</a></li>
+                    <li><a href="html/plats.html">Nos plats</a></li>
+                    <li> <a href="html/about.html"> A propos de nous</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                        <li class="compte-button">
+                            <a href="#">
+                              <span>compte</span>
+                              <img src="images/compte.png" alt="compte" class="icon">
+                            </a>
+                            <div class="dropdown-content">
+                              <a href="#">Se connecter</a>
+                              <a href="#">S'inscrire</a>
+                            </div>
+                          </li>
+                </ul>
+            </nav>
+        </div><!-- section recherche d'une recette-->
+        <section class="search-section">
+            <input type="text" id="searchBar" placeholder="Rechercher une recette...">
+        </section>
+    </header>
     <main>
+        <h1> bienvenu Bienvenue chez Délices Gourmets
+        Découvrez nos recettes délicieuses et faciles à suivre.</h1>
         <section class="carousel">
             <div class="carousel-container">
-                <img src="images/recette1.jpg" alt="Recette 1">
-                <img src="images/recette2.jpg" alt="Recette 2">
-                <img src="images/recette3.jpg" alt="Recette 3">
+                <img src="./images/tarte.png" alt="tarte">
+                <img src="./images/truite.png" alt="truite">
+                <img src="./images/spaghetti.png" alt="spaghetti">
+                <img src="./images/tarte au citron.png" alt="tarte au citron">
+                <img src="./images/saucisson gateau.png" alt="gateau saucisson">
+                <img src="./images/saucisse.png" alt="saucisse">
+                <img src="./images/poulet mediterane.png" alt="poulet">
+                <img src="./images/pommes espagnoles.png" alt="pommes espagnoles">
+                <img src="./images/paella.png" alt="paella">
+                <img src="./images/nouille.png" alt="nouille">
+                <img src="./images/gateau.png" alt="gateau">
+                <img src="./images/cookies.png" alt="cookies">
+                <img src="./images/coeur coulant.png" alt="coeur coulant">
+                <img src="./images/boulette pane.png" alt="boulette">
+                <img src="./images/thiep.png" alt="thiep">
+                <img src="./images/brochette.png" alt="brochette">
+                <img src="./images/gateau eclair.png" alt="gateau eclair">
+                <img src="./images/sandwich club.png" alt="sandwich club">
+                <img src="./images/steak.png" alt="steak">
+                <img src="./images/poulet roti.png" alt="poulet roti">
+                <img src="./images/pizza.png" alt="pizza">
+                <img src="./images/donuts.png" alt="donuts">
+                <img src="./images/image.png" alt="gauffres">
+                <img src="./images/poisson.png" alt="poisson">
             </div>
         </section>
 
@@ -70,20 +102,59 @@
     </section>
     <!-- Newsletter -->
     <section class="newsletter">
-        <h2>Inscrivez-vous à notre Newsletter</h2>
-        <a href="compte.html" class="compte-link">
-            <img src="c:\Users\Administrator\Pictures\image.png" alt="Compte" class="icon">
-        </a>
+        <p>pour rester au courants des dernieres nouveautes Inscrivez-vous à notre Newsletter </p>
+      <ul> <li> <a href="compte.html"> Newsletter</a></li></ul>
     </section>
 
     </main>
-    <footer>
-        <div class="bas">
-            <p>&copy; 2024 Site de Recettes</p>
-            <p>Design by KB et Glo</p>
-            <p><a href="serviceclient.html">Service Clients</a></p>
-            <p><a href="sugestetcommentaire.html">Suggestions et Commentaires</a></p>
-        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>Delices Gourmets</h3>
+                        <ul>
+                            <li><a href="#">Life at Delices Gourmets</a></li>
+                            <li><a href="#">carrierres</a></li>
+                            <li><a href="#">histoires des consommateurs</a></li>
+                            <li><a href="#">Platform Status</a></li>
+                            <li><a href="#">DEI</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="#">s'inscrire</a></li>
+                            <li><a href="#">Contactez-Nous</a></li>
+                            <li><a href="#">regarder une demo</a></li>
+                            <li><a href="#">se referrer a un chef</a></li>
+                            <li><a href="#">devenir partenaire</a></li>
+                            <li><a href="#">termes de references</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">suggestions et commentaires</a></li>
+                            <li><a href="#">centre d'aide</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Connect</h3>
+                        <ul class="social-icons">
+                            <li><a href="#"><img src="images/insta.png" alt="Instagram"></a></li>
+                            <li><a href="#"><img src="images/twitter.png" alt="Twitter"></a></li>
+                            <li><a href="#"><img src="images/facebook.png" alt="Facebook"></a></li></ul></div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="copyright">&copy; 2024 BentoBox</p>
+                </div>
+</div>
+</div>
+            </div>
     </footer>
 </body>
 </html>
