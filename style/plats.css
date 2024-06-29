@@ -9,7 +9,124 @@ body{
     background: white;
     font-family: 'Poppins' , sans-serif;
 }
+header {
+    background: black;
+    color: #fff;
+    padding: 1rem 0;
+}
 
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+ .wrapper,nav ul {
+    display: flex; /*Utiliser en flexbox*/
+    justify-content: space-between; /*Allignement horizontal du contenu*/
+}
+
+ul{
+    padding: 0;
+}
+
+ .wrapper {
+    align-items: center; /*Alignement veritical du contenu*/
+}
+
+.wrapper a {   /* Tous les liens qui se trouvent dans le header*/
+    text-decoration:dashed;  /* soulignage des liens*/
+    color: #fff;
+    text-transform: capitalize;  /*Premiere lettre en majuscule*/
+    text-align: right;
+}
+
+.wrapper li {              /*Tous les elements de liste dans le header*/
+    list-style: none;    /*Enlever les points devant les elements de liste*/
+    margin-right: 25px;  /* Espace entre les elements de liste*/
+   padding: auto;
+    text-align:right;
+}
+
+.logo a {    /* Tous les liens dans le div du logo*/
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.logo{
+    color: #fff;
+}
+.logo span {
+    color: rgb(211, 120, 131);
+}
+
+/*.search-section .wrapper{ /*la zone de recherche de recettes*/
+    .search-section{ /*la zone de reserche de recettes*/
+        text-align: right;
+        padding: 5px;
+        margin-right: 25px;
+}
+    
+    .icon{
+        width: 15px; /* Ajustez la taille de l'icône selon les besoins */
+        height: 15px; /* Ajustez la taille de l'icône selon les besoins */
+        margin-right: 0rem; /* Espace entre l'icône et le texte */
+        vertical-align: middle; /* Centre verticalement l'icône avec le texte */
+        
+    }
+    .compte-button {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        background-color: rgb(211, 120, 131);
+      }
+      
+      .compte-button a {
+        text-decoration: none;
+        color: rgb(5, 5, 5); /* Couleur du texte Contact */
+        display: flex;
+        align-items: center; /* Aligner le texte et l'icône verticalement */
+      }
+      
+      .compte-button .icon {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px; /* Espacement entre le texte et l'icône */
+        background-color: rgb(211, 120, 131);
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgb(5, 4, 4);
+        min-width: 100px;
+        box-shadow: 0 2px 5px rgb(7, 7, 7);
+        z-index: 1;
+      }
+      
+      .compte-button:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown-content a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        background-color: rgb(211, 120, 131);
+        color: #0d0d0d;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
 
 
 .menu {
@@ -17,15 +134,6 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
     grid-gap: 20px 40px
-}
-
-.heading{
-    background: rgb(0, 247, 255);
-    color: #fff;
-    margin-bottom: 30px;
-    padding: 30px 0;
-    grid-column: 1/-1;
-    text-align: center;
 }
 .heading>h1{
     font-weight: 400;
@@ -94,6 +202,66 @@ h1{
 
 .details>.btn:hover{
     background-color: rgba(239, 108, 130, 0.838);
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-md-3 {
+    width: 25%;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(211, 120, 131);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 5px;
+    
+}
+
+.social-icons li a {
+    font-size: 20px;
+    color: #333; 
+}
+.social-icons li a img {
+    width: 40px; /* Définir la largeur souhaitée */
+    height: 40px; /* Définir la hauteur souhaitée */
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
 }
 
 
