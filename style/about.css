@@ -1,4 +1,3 @@
-/* Utilisation de fonts personnalises*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 body{
     margin: 0;
@@ -122,165 +121,67 @@ ul{
       .dropdown-content a:hover {
         background-color: #f1f1f1;
       }
+      .container {
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: black;
+    }
     
-    h2{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        text-align: center;
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .col-md-3 {
+        width: 25%;
+        padding: 10px;
+    }
+    
+    h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
         color: rgb(211, 120, 131);
     }
-    .text{
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    li {
+        margin-bottom: 5px;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .social-icons li {
+        display: inline-block;
+        margin: 0 5px;
+        
+    }
+    
+    .social-icons li a {
+        font-size: 20px;
+        color: #333; 
+    }
+    .social-icons li a img {
+        width: 40px; /* Définir la largeur souhaitée */
+        height: 40px; /* Définir la hauteur souhaitée */
+    }
+    
+    .copyright {
         text-align: center;
+        font-size: 14px;
+        margin-top: 20px;
     }
-    .carousel { /*animations avec les images*/
-        width: 100%;
-        overflow: hidden;
-    }
-    
-    .carousel-container {
-        display: flex;
-        width: 50%;
-        animation: slide 15s infinite;
-    }
-    
-    .carousel-container img {
-        width: 50%;
-        height: auto;
-    }
-    
-    @keyframes slide {
-        0% { transform: translateX(0); }
-        33.33% { transform: translateX(-100%); }
-        66.66% { transform: translateX(-200%); }
-        100% { transform: translateX(0); }
-    }
-    /* Catégories de recettes */
-.categories {
-    padding: 50px 20px;
-    background: #f2f2f2;
-    text-align: center;
-}
-
-.category {
-    margin: 20px 0;
-}
-.categories h2{
-    text-decoration: underline;
-}
-
-/* Recettes populaires */
-.popular-recipes {
-    padding: 50px 20px;
-    background: #fff;
-    text-align: center;
-}
-.popular-recipes h2{
-    text-decoration: underline;
-}
-/* Section Découvrir d'autres recettes */
-.discover-recipes {
-    text-align: center;
-    padding: 50px 20px;
-    background: #f4f4f4;
-}
-
-/* General Styles */
-.discover-recipes h2 { /* Styles for the "Discover Recipes" heading */
-    margin-bottom: 20px; /* Add bottom margin */
-    font-family: Georgia, 'Times New Roman', Times, serif; /* Set font family for heading */
-    color: rgb(211, 120, 131); /* Set heading color */
-}
-
-.discover-button { /* Styles for the "Discover" button */
-    display: inline-block; /* Make the button an inline block element */
-    padding: 10px 20px; /* Add padding to the button */
-    background: rgb(211, 120, 131); /* Set background color */
-    color: white; /* Set text color */
-    text-decoration: none; /* Remove text decoration (underline) */
-    text-transform: uppercase; /* Convert text to uppercase */
-    font-family: "Lato", "Open Sans", sans-serif; /* Set font family */
-    border-radius: 5px; /* Round the button corners */
-    transition: background 0.3s ease; /* Add transition for background color change */
-}
-
-.discover-button:hover { /* Styles for the button when hovered */
-    background: rgb(180, 100, 110); /* Change background color on hover */
-}
-
-/* Newsletter */
-.newsletter { /* Styles for the newsletter section */
-    position: relative; /* Allow positioning of child elements */
-    text-align: center; /* Center the text */
-}
-
-.newsletter a { /* Styles for links within the newsletter section */
-    color: rgb(180, 100, 110); /* Set link color */
-    padding: 50px 20px; /* Add padding around links */
-    text-align: center; /* Center link text */
-    position: relative; /* Allow positioning of child elements */
-    text-decoration-line: overline;
-}
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: black;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.col-md-3 {
-    width: 25%;
-    padding: 10px;
-}
-
-h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: rgb(211, 120, 131);
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-li {
-    margin-bottom: 5px;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-.social-icons li {
-    display: inline-block;
-    margin: 0 5px;
-    
-}
-
-.social-icons li a {
-    font-size: 20px;
-    color: #333; 
-}
-.social-icons li a img {
-    width: 40px; /* Définir la largeur souhaitée */
-    height: 40px; /* Définir la hauteur souhaitée */
-}
-
-.copyright {
-    text-align: center;
-    font-size: 14px;
-    margin-top: 20px;
-}
-/* Responsive Menu */
+    /* Responsive Menu */
 .menu-icon {
     display: none;
     font-size: 1.5rem;
