@@ -1,0 +1,257 @@
+body {
+    font-family: "Lato", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(190, 100, 110);;
+}
+
+header {
+    background: black;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+ .wrapper,nav ul {
+    display: flex; /*Utiliser en flexbox*/
+    justify-content: space-between; /*Allignement horizontal du contenu*/
+}
+
+ul{
+    padding: 0;
+}
+
+ .wrapper {
+    align-items: center; /*Alignement veritical du contenu*/
+}
+
+.wrapper a {   /* Tous les liens qui se trouvent dans le header*/
+    text-decoration:dashed;  /* soulignage des liens*/
+    color: #fff;
+    text-transform: capitalize;  /*Premiere lettre en majuscule*/
+    text-align: right;
+}
+
+.wrapper li {              /*Tous les elements de liste dans le header*/
+    list-style: none;    /*Enlever les points devant les elements de liste*/
+    margin-right: 25px;  /* Espace entre les elements de liste*/
+    text-align:right;
+}
+
+.logo a {    /* Tous les liens dans le div du logo*/
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.logo{
+    color: #fff;
+}
+.logo span {
+    color: rgb(211, 120, 131);
+}
+
+/*.search-section .wrapper{ /*la zone de recherche de recettes*/
+.search-section{ /*la zone de reserche de recettes*/
+    text-align: right;
+    padding: 5px;
+    margin-right: 25px;
+}
+    
+.icon{
+    width: 15px; /* Ajustez la taille de l'icône selon les besoins */
+    height: 15px; /* Ajustez la taille de l'icône selon les besoins */
+    margin-right: 0rem; /* Espace entre l'icône et le texte */
+    vertical-align: middle; /* Centre verticalement l'icône avec le texte */
+        
+}
+.compte-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgb(211, 120, 131);
+}
+      
+.compte-button a {
+    text-decoration: none;
+    color: rgb(5, 5, 5); /* Couleur du texte Contact */
+    display: flex;
+    align-items: center; /* Aligner le texte et l'icône verticalement */
+}
+      
+.compte-button .icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px; /* Espacement entre le texte et l'icône */
+    background-color: rgb(211, 120, 131);
+}
+      
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(5, 4, 4);
+    min-width: 100px;
+    box-shadow: 0 2px 5px rgb(7, 7, 7);
+    z-index: 1;
+}
+      
+.compte-button:hover .dropdown-content {
+    display: block;
+}
+      
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(211, 120, 131);
+    color: #0d0d0d;
+}
+      
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+    
+
+.container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 30px;
+    min-height: 400px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.titre {
+    text-align: center;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.zone-id {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.zone-nom, .zone-prenom {
+    width: 48%;
+}
+
+.zone-com{
+    margin-bottom: 20px;
+}
+.form-id, .form-com {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.zone-input, .zone-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(211, 120, 131);
+    transition: background-color 0.3s ease;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.form-button:hover {
+    background-color: rgb(190, 100, 110);
+}
+.container-2 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-md-3 {
+    width: 25%;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(211, 120, 131);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.social-icons li a img {
+    width: 40px;
+    height: 40px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+    .col-md-3 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .col-md-3 {
+        width: 100%;
+    }
+}
