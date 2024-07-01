@@ -12,7 +12,9 @@
         <div class="wrapper">
             <div class="logo"><a href="#">Delices <span>Gourmets</span></a></div>
             <nav>
-                <ul><!-- les onglets ou liens de navigation dans le header ici sont les memes que pour 
+                <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                <ul class="menu"><!-- les onglets ou liens de navigation dans le header ici sont les memes que pour 
                     le fichier index pour maintenir la coherence dans le css-->
                     <li> <a href="index.html"> Acceuil</a></li>
                     <li><a href="html/plats.html">Nos plats</a></li>
@@ -36,8 +38,10 @@
         </section>
     </header>
     <main>
-        <h1> bienvenu Bienvenue chez Délices Gourmets
-        Découvrez nos recettes délicieuses et faciles à suivre.</h1>
+        <div>
+            <section class="text">
+        <p> Bienvenue chez Délices Gourmets
+        Découvrez nos recettes délicieuses et faciles à suivre.</p> </section></div>
         <section class="carousel">
             <div class="carousel-container">
                 <img src="./images/tarte.png" alt="tarte">
@@ -62,7 +66,7 @@
                 <img src="./images/poulet roti.png" alt="poulet roti">
                 <img src="./images/pizza.png" alt="pizza">
                 <img src="./images/donuts.png" alt="donuts">
-                <img src="./images/image.png" alt="gauffres">
+                <img src="./images/gauffres.png" alt="gauffres">
                 <img src="./images/poisson.png" alt="poisson">
             </div>
         </section>
@@ -72,15 +76,18 @@
         <h2>Catégories de Recettes</h2>
         <div class="category">
             <h3>Entrées</h3>
-            <p>Description des entrées.</p>
+            <p>Les entrées sont l’introduction parfaite à un repas exquis.
+         Découvrez nos délicieuses entrées, préparées avec des ingrédients frais et de saison pour éveiller vos papilles.</p>
         </div>
         <div class="category">
             <h3>Plats principaux</h3>
-            <p>Description des plats principaux.</p>
+            <p>Nos plats principaux sont conçus pour être le cœur de votre repas,
+                offrant une variété de saveurs et de textures qui satisferont tous les goûts.</p>
         </div>
         <div class="category">
             <h3>Desserts</h3>
-            <p>Description des desserts.</p>
+            <p>Terminez votre repas sur une note sucrée avec nos desserts,
+                 chacun d’eux étant une célébration de la gourmandise et de la finesse.</p>
         </div>
     </section>
 
@@ -88,12 +95,14 @@
     <section class="popular-recipes">
         <h2>Recettes Populaires</h2>
         <div class="recipe">
-            <h3>Recette 1</h3>
-            <p>Description de la recette 1.</p>
+            <h3>poulet au curry coco</h3>
+            <p>Un plat exotique et parfumé,
+     avec des morceaux de poulet tendres cuits dans une sauce au lait de coco et aux épices.</p>
         </div>
         <div class="recipe">
-            <h3>Recette 2</h3>
-            <p>Description de la recette 2.</p>
+            <h3>tiramisu classique</h3>
+            <p>Le tiramisu est le dessert italien par excellence,
+    avec sa texture crémeuse et ses saveurs de café et de cacao qui se marient à merveille.</p>
         </div>
     </section>
     <section class="discover-recipes">
@@ -109,8 +118,20 @@
     </main>
         <footer>
             <div class="container">
+
                 <div class="row">
                     <div class="col-md-3">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="html/commentaires.html">suggestions et commentaires</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">centre d'aide</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+
                         <h3>Delices Gourmets</h3>
                         <ul>
                             <li><a href="#">Life at Delices Gourmets</a></li>
@@ -129,16 +150,6 @@
                             <li><a href="#">se referrer a un chef</a></li>
                             <li><a href="#">devenir partenaire</a></li>
                             <li><a href="#">termes de references</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3">
-                        <h3>Support</h3>
-                        <ul>
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="#">suggestions et commentaires</a></li>
-                            <li><a href="#">centre d'aide</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms of Service</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3">
