@@ -1,14 +1,16 @@
-
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins, sans-serif';
 }
-body{
+
+body {
     background: white;
-    font-family: 'Poppins' , sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
+/* Header and Navigation Styles */
 header {
     background: black;
     color: #fff;
@@ -23,169 +25,235 @@ header .container {
     margin: 0 auto;
     padding: 0 1rem;
 }
+
 header h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
 
- .wrapper,nav ul {
-    display: flex; /*Utiliser en flexbox*/
-    justify-content: space-between; /*Allignement horizontal du contenu*/
+.wrapper, nav ul {
+    display: flex; /* Utiliser en flexbox */
+    justify-content: space-between; /* Alignement horizontal du contenu */
 }
 
-ul{
+ul {
     padding: 0;
 }
 
- .wrapper {
-    align-items: center; /*Alignement veritical du contenu*/
+.wrapper {
+    align-items: center; /* Alignement vertical du contenu */
 }
 
-.wrapper a {   /* Tous les liens qui se trouvent dans le header*/
-    text-decoration:dashed;  /* soulignage des liens*/
+.wrapper a {
+    text-decoration: dashed;  /* Soulignage des liens */
     color: #fff;
-    text-transform: capitalize;  /*Premiere lettre en majuscule*/
+    text-transform: capitalize;  /* Première lettre en majuscule */
     text-align: right;
 }
 
-.wrapper li {              /*Tous les elements de liste dans le header*/
-    list-style: none;    /*Enlever les points devant les elements de liste*/
-    margin-right: 25px;  /* Espace entre les elements de liste*/
-   padding: auto;
-    text-align:right;
+.wrapper li {
+    list-style: none;  /* Enlever les points devant les éléments de liste */
+    margin-right: 25px;  /* Espace entre les éléments de liste */
+    padding: auto;
+    text-align: right;
 }
 
-.logo a {    /* Tous les liens dans le div du logo*/
+.logo a {
     font-size: 2rem;
     text-transform: uppercase;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
 }
-.logo{
+
+.logo {
     color: #fff;
 }
+
 .logo span {
     color: rgb(211, 120, 131);
 }
 
-/*.search-section .wrapper{ /*la zone de recherche de recettes*/
-    .search-section{ /*la zone de reserche de recettes*/
-        text-align: right;
-        padding: 5px;
-        margin-right: 25px;
+.search-section {
+    text-align: right;
+    padding: 5px;
+    margin-right: 25px;
 }
-    
-    .icon{
-        width: 15px; /* Ajustez la taille de l'icône selon les besoins */
-        height: 15px; /* Ajustez la taille de l'icône selon les besoins */
-        margin-right: 0rem; /* Espace entre l'icône et le texte */
-        vertical-align: middle; /* Centre verticalement l'icône avec le texte */
-        
+
+.icon {
+    width: 15px; /* Ajustez la taille de l'icône selon les besoins */
+    height: 15px; /* Ajustez la taille de l'icône selon les besoins */
+    margin-right: 0rem; /* Espace entre l'icône et le texte */
+    vertical-align: middle; /* Centre verticalement l'icône avec le texte */
+}
+
+.compte-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgb(211, 120, 131);
+}
+
+.compte-button a {
+    text-decoration: none;
+    color: rgb(5, 5, 5); /* Couleur du texte Contact */
+    display: flex;
+    align-items: center; /* Aligner le texte et l'icône verticalement */
+}
+
+.compte-button .icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px; /* Espacement entre le texte et l'icône */
+    background-color: rgb(211, 120, 131);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(5, 4, 4);
+    min-width: 100px;
+    box-shadow: 0 2px 5px rgb(7, 7, 7);
+    z-index: 1;
+}
+
+.compte-button:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(211, 120, 131);
+    color: #0d0d0d;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Navigation */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    background: #fff;
+    border-radius: 2px;
+    height: 3px;
+    width: 25px;
+    margin-bottom: 4px;
+}
+
+@media (max-width: 768px) {
+    .wrapper, nav ul {
+        display: none; /* Hide navigation links */
+        flex-direction: column; /* Stack them vertically */
+        width: 100%;
     }
-    .compte-button {
-        position: relative;
-        display: inline-block;
-        cursor: pointer;
-        background-color: rgb(211, 120, 131);
-      }
-      
-      .compte-button a {
-        text-decoration: none;
-        color: rgb(5, 5, 5); /* Couleur du texte Contact */
+
+    .nav-toggle {
         display: flex;
-        align-items: center; /* Aligner le texte et l'icône verticalement */
-      }
-      
-      .compte-button .icon {
-        width: 20px;
-        height: 20px;
-        margin-left: 5px; /* Espacement entre le texte et l'icône */
-        background-color: rgb(211, 120, 131);
-      }
-      
-      .dropdown-content {
-        display: none;
+    }
+
+    nav ul {
+        background: black;
         position: absolute;
-        background-color: rgb(5, 4, 4);
-        min-width: 100px;
-        box-shadow: 0 2px 5px rgb(7, 7, 7);
-        z-index: 1;
-      }
-      
-      .compte-button:hover .dropdown-content {
-        display: block;
-      }
-      
-      .dropdown-content a {
+        top: 60px;
+        right: 0;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    nav ul li a {
         display: block;
         padding: 10px;
-        text-decoration: none;
-        background-color: rgb(211, 120, 131);
-        color: #0d0d0d;
-      }
-      
-      .dropdown-content a:hover {
-        background-color: #f1f1f1;
-      }
+        border-bottom: 1px solid #fff;
+    }
 
+    .wrapper.active {
+        display: flex;
+    }
+}
 
+/* Page Content Styles */
 .menu {
     padding: 0 10px 30px 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
-    grid-gap: 20px 40px
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 20px 40px;
 }
-.heading>h1{
+
+.heading {
+    background: rgb(0, 247, 255);
+    color: #fff;
+    margin-bottom: 30px;
+    padding: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.heading>h1 {
     font-weight: 400;
     font-size: 32px;
     letter-spacing: 10px;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
-.food-items{
+
+.food-items {
     display: grid;
     position: relative;
     grid-template-rows: auto 1fr;
     border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
     transition: .2s ease-in-out;
 }
-.food-items img{
+
+.food-items img {
     position: relative;
     width: 100%;
     height: 280px;
     border-radius: 15px 15px 0 0;
     cursor: pointer;
 }
-h1{
+
+h1 {
     grid-column: 1/-1;
     text-align: center;
 }
 
-.details{
+.details {
     padding: 20px 10px;
     display: grid;
     grid-template-rows: auto 1fr 50px;
     grid-row: auto;
 }
 
-.details-sub{
+.details-sub {
     display: grid;
-    grid-template-rows: auto auto;   
+    grid-template-rows: auto auto;
 }
 
-.details-sub>h5{
+.details-sub>h5 {
     font-weight: 600;
-    font-size: 18px;   
+    font-size: 18px;
 }
-.details>p{
-    color:black;
+
+.details>p {
+    color: black;
     font-size: 15px;
     line-height: 28px;
     font-weight: 400;
     align-self: stretch;
 }
-.details>.btn{
+
+.details>.btn {
     display: inline-block;
     background: rgb(239, 156, 170);
     border: none;
@@ -200,10 +268,58 @@ h1{
     line-height: 2.5;
 }
 
-.details>.btn:hover{
+.details>.btn:hover {
     background-color: rgba(239, 108, 130, 0.838);
 }
-.container {
+
+/* Footer Styles */
+footer {
+    background: black;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 1rem;
+}
+
+.footer-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-section ul li a:hover {
+    color: rgb(211, 120, 131);
+}
+
+/* Specific Footer Styles */
+footer .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -211,57 +327,66 @@ h1{
     background-color: black;
 }
 
-.row {
+footer .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.col-md-3 {
-    width: 25%;
+footer .col-md-3 {
+    width: 100%;
+    max-width: 25%;
     padding: 10px;
 }
 
-h3 {
+footer h3 {
     font-size: 20px;
     margin-bottom: 10px;
     color: rgb(211, 120, 131);
 }
 
-ul {
+footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-li {
+footer li {
     margin-bottom: 5px;
 }
 
-a {
+footer a {
     color: white;
     text-decoration: none;
 }
 
-.social-icons li {
+footer .social-icons li {
     display: inline-block;
     margin: 0 5px;
-    
 }
 
-.social-icons li a {
+footer .social-icons li a {
     font-size: 20px;
     color: #333; 
 }
-.social-icons li a img {
-    width: 40px; /* Définir la largeur souhaitée */
-    height: 40px; /* Définir la hauteur souhaitée */
+
+footer .social-icons li a img {
+    width: 40px;
+    height: 40px;
 }
 
-.copyright {
+footer .copyright {
     text-align: center;
     font-size: 14px;
     margin-top: 20px;
+}
+
+/* Responsive Footer Styles */
+@media (max-width: 768px) {
+    footer .col-md-3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 
