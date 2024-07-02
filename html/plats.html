@@ -9,36 +9,33 @@
     </head>
     <body>
         <header>
-            <div class="wrapper">
-                <div class="logo"><a href="#">Delices <span>Gourmets</span></a></div>
-                <nav>
-                    <ul><!-- les onglets ou liens de navigation dans le header ici sont les memes que pour 
-                        le fichier index pour maintenir la coherence dans le css-->
-                        <li> <a href="index.html"> Acceuil</a></li>
-                        <li><a href="html/plats.html">Nos plats</a></li>
-                        <li> <a href="html/about.html"> A propos de nous</a></li>
-                        <li><a href="contact.html">contact</a></li>
-                            <li class="compte-button">
-                                <a href="#">
-                                  <span>compte</span>
-                                  <img src="../images/compte.png" alt="compte" class="icon">
-                                </a>
-                                <div class="dropdown-content">
-                                  <a href="#">Se connecter</a>
-                                  <a href="#">S'inscrire</a>
-                                </div>
-                              </li>
+            <div class="container">
+                <div class="logo">
+                    <a href="#">DÉLICES <span>GOURMETS</span></a>
+                </div>
+                <nav class="wrapper">
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Nos Plats</a></li>
+                        <li><a href="#">À Propos De Nous</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li class="compte-button">
+                            <a href="#">Compte <img src="../images/compte.png" alt="icon" class="icon"></a>
+                            <div class="dropdown-content">
+                                <a href="#">S'inscrire</a>
+                                <a href="#">Se Connecter</a>
+                            </div>
+                        </li>
                     </ul>
-                </nav>
-            </div><!-- section recherche d'une recette-->
+                  </nav>
+            </div>
             <section class="search-section">
                 <input type="text" id="searchBar" placeholder="Rechercher une recette...">
             </section>
         </header>
-        <main><div>
-        <h1>Our African Dishes</h1>
-            </div>
-            <div class="recipes-container"></div>
+        <main>
+        <div class="menu">
+            <h1>Our African Dishes</h1>
             <div class="food-items">
                 <img src="../images/ndole.png" alt="ndole">
                 <div class="details">
@@ -70,7 +67,7 @@
                 </div>
             </div>
             <div class="food-items">
-                <img src="../images/pile.png" alt="pile">
+                <img src="../images/pilé.png" alt="pile">
                 <div class="details">
                     <div class="details-sub">
                         <h5>Pile de Plantain</h5>
@@ -99,7 +96,7 @@
                     <a href="poisson.html" class="btn">Voir la recette</a>
                 </div>
             </div>
-
+        </div>
         </main>
         <footer>
             <div class="container">
@@ -108,8 +105,8 @@
                         <h3>Delices Gourmets</h3>
                         <ul>
                             <li><a href="#">Life at Delices Gourmets</a></li>
-                            <li><a href="#">carrierres</a></li>
-                            <li><a href="#">histoires des consommateurs</a></li>
+                            <li><a href="#">Carrierres</a></li>
+                            <li><a href="#">Histoires des consommateurs</a></li>
                             <li><a href="#">Platform Status</a></li>
                             <li><a href="#">DEI</a></li>
                         </ul>
@@ -117,20 +114,20 @@
                     <div class="col-md-3">
                         <h3>Contact</h3>
                         <ul>
-                            <li><a href="#">s'inscrire</a></li>
+                            <li><a href="#">S'inscrire</a></li>
                             <li><a href="#">Contactez-Nous</a></li>
-                            <li><a href="#">regarder une demo</a></li>
-                            <li><a href="#">se referrer a un chef</a></li>
-                            <li><a href="#">devenir partenaire</a></li>
-                            <li><a href="#">termes de references</a></li>
+                            <li><a href="#">Regarder une demo</a></li>
+                            <li><a href="#">Se referrer a un chef</a></li>
+                            <li><a href="#">Devenir partenaire</a></li>
+                            <li><a href="#">Termes de references</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3">
                         <h3>Support</h3>
                         <ul>
                             <li><a href="#">FAQs</a></li>
-                            <li><a href="#">suggestions et commentaires</a></li>
-                            <li><a href="#">centre d'aide</a></li>
+                            <li><a href="#">Suggestions et commentaires</a></li>
+                            <li><a href="#">Centre d'aide</a></li>
                             <li><a href="#">Privacy Policy</a></li>
                             <li><a href="#">Terms of Service</a></li>
                         </ul>
