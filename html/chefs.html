@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suggestions et Commentaires</title>
-    <link rel="stylesheet" href="../style/sugg.css">
+    <title>Nos Chefs</title>
+    <link rel="stylesheet" href="../style/chefs.css">
 </head>
 <body>
     <header>
@@ -13,9 +13,9 @@
             <nav>
                 <ul><!-- les onglets ou liens de navigation dans le header ici sont les memes que pour 
                     le fichier index pour maintenir la coherence dans le css-->
-                    <li> <a href="index.html"> Accueil</a></li>
-                    <li><a href="html/plats.html">Nos plats</a></li>
-                    <li> <a href="html/about.html"> A propos de nous</a></li>
+                    <li> <a href="index.html"> accueil</a></li>
+                    <li><a href="html/plats.html">nos plats</a></li>
+                    <li> <a href="html/about.html"> à propos de nous</a></li>
                     <li><a href="contact.html">contact</a></li>
                         <li class="compte-button">
                             <a href="#">
@@ -23,10 +23,10 @@
                               <img src="../images/compte.png" alt="compte" class="icon">
                             </a>
                             <div class="dropdown-content">
-                              <a href="#">Se connecter</a>
-                              <a href="#">S'inscrire</a>
+                              <a href="#">se connecter</a>
+                              <a href="#">s'inscrire</a>
                             </div>
-                          </li>
+                        </li>
                 </ul>
             </nav>
         </div><!-- section recherche d'une recette-->
@@ -35,27 +35,46 @@
         </div>
     </header>
     <main>
-        <div class="container">
-            <h1 class="titre">suggestions et commentaires</h1>
-            <form class="comment-form" action="#" method="post">
-                <div class="zone-id">
-                    <div class="zone-nom">
-                        <label for="first-name" class="form-id">prénom:</label>
-                        <input type="text" id="first-name" name="first-name" class="zone-input" required>
-                    </div>
-                    <div class="zone-prenom">
-                        <label for="last-name" class="form-id">nom:</label>
-                        <input type="text" id="last-name" name="last-name" class="zone-input" required>
-                    </div>
-                </div>
-                <div class="zone-com">
-                    <label for="comment" class="form-com">commentaire:</label>
-                    <textarea id="comment" name="comment" class="zone-textarea" rows="4" required></textarea>
-                </div>
-                <div class="zone-bouton">
-                    <button type="submit" class="form-button">soumettre</button>
-                </div>
-            </form>
+        <div class="container-3">
+            <h1>nos chefs</h1>
+         <div class="chef-info-container">
+            <div class="chef-info">
+                <img src="../images/chef1.jpg" alt="Chef 1">
+                <h2>chef pablo hernandez</h2>
+                <p>Étoiles : ★★★</p>
+                <p>Contact : pabloh@gmail.com</p>
+            </div>
+            <div class="chef-info">
+                <img src="../images/chef2.jpg" alt="Chef 2">
+                <h2>chef marie morgan</h2>
+                <p>Étoiles : ★★★</p>
+                <p>Contact : morganm@hotmail.com</p>
+            </div>
+            <div class="chef-info">
+                <img src="../images/chef3.webp" alt="Chef 3">
+                <h2>chef jeremy allen</h2>
+                <p>Étoiles : ★★★★</p>
+                <p>Contact : jerall@gmail.com</p>
+            </div>
+            <div class="chef-info">
+                <img src="../images/chef4.jpg" alt="Chef 4">
+                <h2>chef abdel mahrez</h2>
+                <p>Étoiles : ★★</p>
+                <p>Contact : abdelmah@gmail.com</p>
+            </div>
+            <div class="chef-info">
+                <img src="../images/chef5.jpg" alt="Chef 5">
+                <h2>chef margot robbie </h2>
+                <p>Étoiles : ★★★★</p>
+                <p>Contact : aminakante@yahoo.com</p>
+            </div>
+            <div class="chef-info">
+                <img src="../images/chef6.webp" alt="Chef 5">
+                <h2>chef jonathan kazadi</h2>
+                <p>Étoiles : ★★★★</p>
+                <p>Contact : johnkaz@gmail.com</p>
+            </div>
+         </div>
         </div>
     </main>
     <footer>
@@ -107,6 +126,6 @@
                 </div>
             </div>
         </div>
-    </footer>   
+    </footer> 
 </body>
 </html>
