@@ -15,7 +15,7 @@
     --dark-charcoal: hsl(24, 5%, 18%);
 }
 
-h1, h2, h3, h4 {
+ h1, h2, h3, h4 {
     line-height: 1.2;
     font-family: 'Young Serif', serif;
     font-size:  1.5rem;
@@ -24,7 +24,7 @@ h1, h2, h3, h4 {
     margin-bottom: 1.75rem;
 }
 
-ul, ol{
+ ul, ol{
     padding: 0 1rem;
 }
 
@@ -42,8 +42,126 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     color: var(--wenge-brown);
-    background-color: var(--eggshell);
+    background-color: rgb(190, 100, 110);;
 
+}
+header {
+    background: black;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+ .wrapper1,nav ul {
+    display: flex;
+    justify-content: space-between; 
+}
+
+ul{
+    padding: 0;
+}
+
+ .wrapper1 {
+    align-items: center; 
+}
+
+.wrapper1 a {   
+    text-decoration:dashed;  
+    color: #fff;
+    text-transform: capitalize;  
+    text-align: right;
+}
+
+.wrapper1 li {              
+    list-style: none;   
+    margin-right: 25px;  
+    text-align:right;
+}
+
+.logo a {    
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.logo{
+    color: #fff;
+}
+.logo span {
+    color: rgb(211, 120, 131);
+}
+
+
+.search-section{ 
+    text-align: right;
+    padding: 5px;
+    margin-right: 25px;
+}
+    
+.icon{
+    width: 15px; 
+    height: 15px; 
+    margin-right: 0rem; 
+    vertical-align: middle; 
+        
+}
+.compte-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgb(211, 120, 131);
+}
+      
+.compte-button a {
+    text-decoration: none;
+    color: rgb(5, 5, 5); 
+    display: flex;
+    align-items: center; 
+}
+      
+.compte-button .icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px; 
+    background-color: rgb(211, 120, 131);
+}
+      
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(5, 4, 4);
+    min-width: 100px;
+    box-shadow: 0 2px 5px rgb(7, 7, 7);
+    z-index: 1;
+}
+      
+.compte-button:hover .dropdown-content {
+    display: block;
+}
+      
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(211, 120, 131);
+    color: #0d0d0d;
+    text-transform: capitalize;
+}
+      
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
 }
 
 .recette-title {
@@ -66,7 +184,7 @@ span{
     font-weight: 600;
 }
 
-li {
+.instructions-list li {
     padding-left: 1rem;
     margin-bottom: .5rem;
 }
@@ -132,8 +250,67 @@ tr {
 
 }
 
-@media (max-width: 500px){
+.container-2 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+}
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-md-3 {
+    width: 25%;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.full-width {
+    width: 100%;
+}
+
+ h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(211, 120, 131);
+}
+
+ ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ li {
+    margin-bottom: 5px;
+}
+
+ a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.social-icons li a img {
+    width: 40px;
+    height: 40px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+@media (max-width: 500px) {
     .recette-wrapper {
         margin: 0;
         border-radius: 0;
@@ -143,10 +320,39 @@ tr {
     .recette-img {
         border-radius: 0;
     }
+
     .recette-container {
         padding: 0 1.75rem;
     }
+
     .recette-title {
         font-size: 2.2rem;
     }
 }
+
+@media (max-width: 768px) {
+    .col-md-3 {
+        width: 50%;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .full-width {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .col-md-3 {
+        width: 100%;
+    }
+
+    .full-width {
+        width: 100%;
+    }
+}
+
+
