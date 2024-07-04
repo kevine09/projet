@@ -54,10 +54,11 @@ ul{
     font-size: 2rem;
     text-transform: uppercase;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
 }
 .logo{
     color: #fff;
+    padding: 15px;
+   
 }
 .logo span {
     color: rgb(211, 120, 131);
@@ -131,29 +132,62 @@ ul{
     .text{
         text-align: center;
     }
-    .carousel { /*animations avec les images*/
-        width: 100%;
-        overflow: hidden;
+    
+    .carousel {
+         width: 100%;
+         overflow: hidden;
+         }
+
+.carousel-container {
+     display: flex;
+      width: 180%;
+     /* Multipliez le nombre d'images par 100% pour permettre le défilement */ 
+     animation: slide 25s infinite; 
+    }
+
+.carousel-container img {
+     width: 20%; /*Répartit les images sur toute la largeur du conteneur */ 
+     width: 375px;
+     height: auto;
+     }
+
+@keyframes slide {
+     0% { transform: translateX(0); }
+      25% { transform: translateX(-100%); } 
+      50% { transform: translateX(-200%); }
+       75% { transform: translateX(-300%); } 
+       100% { transform: translateX(0); } 
+    }
+    .welcome-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgba(251, 249, 249, 0.8);
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        animation: fadeInOut 4s ease-in-out infinite;
     }
     
-    .carousel-container {
-        display: flex;
-        width: 50%;
-        animation: slide 15s infinite;
+    .welcome-text {
+        font-size: 2.5em;
+        margin: 0;
     }
     
-    .carousel-container img {
-        width: 50%;
-        height: auto;
+    .welcome-description {
+        font-size: 1.2em;
+        margin-top: 10px;
     }
     
-    @keyframes slide {
-        0% { transform: translateX(0); }
-        33.33% { transform: translateX(-100%); }
-        66.66% { transform: translateX(-200%); }
-        100% { transform: translateX(0); }
+    
+    @keyframes fadeInOut {
+        0%, 10%, 90%, 100% { opacity: 0; }
+        25%, 75% { opacity: 1; }
     }
-    /* Catégories de recettes */
+      
+    
+     
+    
 .categories {
     padding: 50px 20px;
     background: #f2f2f2;
@@ -222,7 +256,7 @@ ul{
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 2000px;
     margin: 0 auto;
     padding: 20px;
     background-color: black;
