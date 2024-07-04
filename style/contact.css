@@ -85,7 +85,7 @@ textarea {
 }
 
 button {
-    background-color: #007BFF;
+    background-color: rgb(211, 120, 131); /* Rose */
     color: #fff;
     font-size: 14px;
     padding: 12px;
@@ -98,7 +98,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #e67e8b; /* Rose plus clair au survol */
 }
 
 a {

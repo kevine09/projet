@@ -3,11 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    background: linear-gradient(to right, #f6f7f9, #ebedee);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +18,7 @@ body {
 .container {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
     width: 900px;
@@ -29,18 +29,18 @@ body {
 
 .container p {
     font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.3px;
+    line-height: 1.6;
     margin: 20px 0;
+    color: #555;
 }
 
 .container span {
     font-size: 12px;
-    color: #666;
+    color: #999;
 }
 
 .container a {
-    color: #512da8;
+    color: rgb(211, 120, 131);
     font-size: 13px;
     text-decoration: none;
     margin: 15px 0 10px;
@@ -48,11 +48,11 @@ body {
 }
 
 .container a:hover {
-    color: #333;
+    color: #e67e8b;
 }
 
 .container button {
-    background-color: #6c63ff;
+    background-color: rgb(211, 120, 131);
     color: #fff;
     font-size: 14px;
     padding: 12px 45px;
@@ -68,12 +68,12 @@ body {
 
 .container button.hidden {
     background-color: transparent;
-    border: 1px solid #6c63ff;
-    color: #6c63ff;
+    border: 1px solid rgb(211, 120, 131);
+    color: rgb(211, 120, 131);
 }
 
 .container button:hover {
-    background-color: #5a54d6;
+    background-color: #e67e8b;
 }
 
 .container form {
@@ -88,7 +88,7 @@ body {
 }
 
 .container input {
-    background-color: #eee;
+    background-color: #f9f9f9;
     border: none;
     margin: 8px 0;
     padding: 12px 15px;
@@ -100,7 +100,7 @@ body {
 }
 
 .container input:focus {
-    background-color: #ddd;
+    background-color: #eee;
 }
 
 .form-container {
@@ -153,7 +153,7 @@ body {
 }
 
 .social-icons a {
-    border: 1px solid #ddd;
+    border: 1px solid rgb(211, 120, 131);
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
@@ -161,7 +161,7 @@ body {
     margin: 0 5px;
     width: 40px;
     height: 40px;
-    color: #333;
+    color: rgb(211, 120, 131);
     font-size: 1.2rem;
     transition: background 0.3s ease;
 }
@@ -186,8 +186,7 @@ body {
 }
 
 .toggle {
-    background-color: #8360c3;
-    background: linear-gradient(to right, #6c63ff, #8360c3);
+    background: linear-gradient(to right, #fff, #e67e8b);
     height: 100%;
     position: relative;
     left: -100%;
@@ -213,6 +212,7 @@ body {
     top: 0;
     transform: translateX(0);
     transition: all 0.6s ease-in-out;
+    color: #fff;
 }
 
 .toggle-left {
@@ -243,8 +243,8 @@ body {
 }
 
 a.btn {
-    background-color: #6c63ff;
-    color: #fff;
+    background-color: #fff;
+    color: rgb(211, 120, 131);
     padding: 12px 45px;
     border-radius: 20px;
     font-weight: 600;
@@ -258,5 +258,26 @@ a.btn {
 }
 
 a.btn:hover {
-    background-color: #5a54d6;
+    background-color: #e67e8b;
+}
+
+.return-home {
+    background-color: #fff;
+    color: rgb(211, 120, 131);
+    padding: 12px 45px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    border: 1px solid rgb(211, 120, 131);
+}
+
+.return-home:hover {
+    background-color: rgb(211, 120, 131);
+    color: #fff;
 }
