@@ -15,7 +15,7 @@
                     le fichier index pour maintenir la coherence dans le css-->
                     <li> <a href="../index.html"> Acceuil</a></li>
                     <li><a href="../html/plats.html">Nos plats</a></li>
-                    <li> <a href="./about.html"> A propos de nous</a></li>
+                    <li> <a href="../about.html"> A propos de nous</a></li>
                     <li><a href="../html/compte">contact</a></li>
                         <li class="compte-button">
                             <a href="#">
@@ -23,7 +23,7 @@
                               <img src="../images/compte.png" alt="compte" class="icon">
                             </a>
                             <div class="dropdown-content">
-                              <a href="./connexion.html">Se connecter</a>
+                              <a href="../connexion.html">Se connecter</a>
                               <a href="../html/inscription.html">S'inscrire</a>
                             </div>
                           </li>
@@ -34,20 +34,39 @@
             <input type="text" id="searchBar" placeholder="Rechercher une recette...">
         </section>
     </header>
-
     <main>
-        <section class="about-us">
-            <h2>À Propos de Nous</h2>
-            <p>Bienvenue sur notre site de recettes. Nous sommes passionnés par la cuisine et nous aimons partager nos recettes favorites avec vous. Que vous soyez un chef professionnel ou un cuisinier amateur, vous trouverez ici des recettes délicieuses et faciles à suivre.</p>
-            <h3>Notre Mission</h3>
-            <p>Notre mission est de rendre la cuisine accessible à tous. Nous croyons que tout le monde peut cuisiner des plats savoureux avec les bons ingrédients et les bonnes instructions. C'est pourquoi nous nous efforçons de fournir des recettes détaillées et des astuces de cuisine pour vous aider à réussir chaque plat.</p>
-            <h3>Notre Équipe</h3>
-            <p>Notre équipe est composée de chefs expérimentés et de passionnés de cuisine qui travaillent ensemble pour créer et tester chaque recette avant de la partager avec vous. Nous espérons que vous apprécierez nos recettes autant que nous aimons les créer pour vous.</p>
-            <h3>Contactez-Nous</h3>
-            <p>Si vous avez des questions, des suggestions ou si vous souhaitez simplement nous dire bonjour, n'hésitez pas à nous contacter via la page de contact. Nous serons ravis de vous entendre!</p>
-        </section>
+        <div class="carousel">
+            <input type="radio" name="carousel" id="slide1" checked>
+            <input type="radio" name="carousel" id="slide2">
+            <input type="radio" name="carousel" id="slide3">
+
+            <div class="carousel-wrapper">
+                <div class="carousel-item" id="item1">
+                    <h2>A propos de nous</h2>
+                    <p>Bienvenue sur notre site de recettes. Nous sommes passionnés par la cuisine et nous aimons partager nos recettes favorites avec vous. Que vous soyez un chef professionnel ou un cuisinier amateur, vous trouverez ici des recettes délicieuses et faciles à suivre.</p>
+                </div>
+                <div class="carousel-item" id="item2">
+                    <h2>Notre mission</h2>
+                    <p>Notre mission est de rendre la cuisine accessible à tous. Nous croyons que tout le monde peut cuisiner des plats savoureux avec les bons ingrédients et les bonnes instructions. C'est pourquoi nous nous efforçons de fournir des recettes détaillées et des astuces de cuisine pour vous aider à réussir chaque plat.</p>
+                </div>
+                <div class="carousel-item" id="item3">
+                    <h2>Notre Équipe</h2>
+                    <p>Notre équipe est composée de chefs expérimentés et de passionnés de cuisine qui travaillent ensemble pour créer et tester chaque recette avant de la partager avec vous. Nous espérons que vous apprécierez nos recettes autant que nous aimons les créer pour vous.</p>
+                </div>
+            </div>
+
+            <div class="carousel-nav">
+                <label for="slide1" class="nav-dot"></label>
+                <label for="slide2" class="nav-dot"></label>
+                <label for="slide3" class="nav-dot"></label>
+            </div>
+        </div>
     </main>
 
+    <section class="text">
+        <p>Si vous avez des questions, des suggestions ou si vous souhaitez simplement
+        nous dire bonjour, n'hésitez pas à nous contacter via la page de contact. Nous serons ravis de vous entendre!</p>
+    </section>
 
     <footer>
         <div class="container">
@@ -56,7 +75,7 @@
                 <div class="col-md-3">
                     <h3>Support</h3>
                     <ul>
-                        <li><a href="html/commentaires.html">suggestions et commentaires</a></li>
+                        <li><a href="../html/commentaires.html">suggestions et commentaires</a></li>
                         <li><a href="#">FAQs</a></li>
                         <li><a href="#">centre d'aide</a></li>
                         <li><a href="#">Privacy Policy</a></li>
@@ -77,10 +96,10 @@
                 <div class="col-md-3">
                     <h3>Contact</h3>
                     <ul>
-                        <li><a href="html/connexion.html">s'inscrire</a></li>
-                        <li><a href="#">Contactez-Nous</a></li>
+                        <li><a href="../html/inscription.html">s'inscrire</a></li>
+                        <li><a href="../html/contact.html">Contactez-Nous</a></li>
                         <li><a href="#">regarder une demo</a></li>
-                        <li><a href="#">se referrer a un chef</a></li>
+                        <li><a href="../html/chefs.html">se referrer a un chef</a></li>
                         <li><a href="#">devenir partenaire</a></li>
                         <li><a href="#">termes de references</a></li>
                     </ul>
@@ -88,9 +107,9 @@
                 <div class="col-md-3">
                     <h3>Connect</h3>
                     <ul class="social-icons">
-                        <li><a href="#"><img src="images/insta.png" alt="Instagram"></a></li>
-                        <li><a href="#"><img src="images/twitter.png" alt="Twitter"></a></li>
-                        <li><a href="#"><img src="images/facebook.png" alt="Facebook"></a></li></ul></div>
+                        <li><a href="#"><img src="../images/insta.png" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="../images/twitter.png" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="../images/facebook.png" alt="Facebook"></a></li></ul></div>
 
             <div class="row">
                 <div class="col-md-12">
