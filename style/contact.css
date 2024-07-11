@@ -8,7 +8,7 @@
 }
 
 body {
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    background: linear-gradient(to bottom, #ffafbd, #ffc3a0); /* New gradient background */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,7 +53,7 @@ h1 {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.social-icons a:hover {
+social-icons a:hover {
     background-color: #f5f5f5;
     color: #007BFF;
 }
@@ -85,7 +85,7 @@ textarea {
 }
 
 button {
-    background-color:  rgb(211, 120, 131); /* Rose */
+    background-color: rgb(211, 120, 131); /* Rose */
     color: #fff;
     font-size: 14px;
     padding: 12px;
@@ -98,7 +98,7 @@ button {
 }
 
 button:hover {
-    background-color:  rgb(211, 120, 131); /* Rose plus clair au survol */
+    background-color: #e67e8b; /* Rose plus clair au survol */
 }
 
 a {

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +7,7 @@
 }
 
 body {
-    background: linear-gradient(to right, #f6f7f9, #ebedee);
+    background: linear-gradient(to bottom, #ffafbd, #ffc3a0); /* New gradient background */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,7 +40,7 @@ body {
 }
 
 .container a {
-    color:  rgb(211, 120, 131);
+    color: rgb(211, 120, 131); /* Rose */
     font-size: 13px;
     text-decoration: none;
     margin: 15px 0 10px;
@@ -49,11 +48,11 @@ body {
 }
 
 .container a:hover {
-    color: #e67e8b;
+    color: #e67e8b; /* Rose plus clair au survol */
 }
 
 .container button {
-    background-color:  rgb(211, 120, 131);
+    background-color: rgb(211, 120, 131); /* Rose */
     color: #fff;
     font-size: 14px;
     padding: 12px 45px;
@@ -69,12 +68,12 @@ body {
 
 .container button.hidden {
     background-color: transparent;
-    border: 1px solid rgb(211, 120, 131);
-    color:  rgb(211, 120, 131);
+    border: 1px solid rgb(211, 120, 131); /* Rose */
+    color: rgb(211, 120, 131); /* Rose */
 }
 
 .container button:hover {
-    background-color: #e67e8b;
+    background-color: #e67e8b; /* Rose plus clair au survol */
 }
 
 .container form {
@@ -154,7 +153,7 @@ body {
 }
 
 .social-icons a {
-    border: 1px solid  rgb(211, 120, 131);
+    border: 1px solid rgb(211, 120, 131); /* Rose */
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
@@ -162,7 +161,7 @@ body {
     margin: 0 5px;
     width: 40px;
     height: 40px;
-    color:  rgb(211, 120, 131);
+    color: rgb(211, 120, 131); /* Rose */
     font-size: 1.2rem;
     transition: background 0.3s ease;
 }
@@ -245,7 +244,7 @@ body {
 
 a.btn {
     background-color: #fff;
-    color:  rgb(211, 120, 131);
+    color: rgb(211, 120, 131); /* Rose */
     padding: 12px 45px;
     border-radius: 20px;
     font-weight: 600;
@@ -259,12 +258,12 @@ a.btn {
 }
 
 a.btn:hover {
-    background-color: #e67e8b;
+    background-color: #e67e8b; /* Rose plus clair au survol */
 }
 
 .return-home {
     background-color: #fff;
-    color:  rgb(211, 120, 131);
+    color: rgb(211, 120, 131); /* Rose */
     padding: 12px 45px;
     border-radius: 20px;
     font-weight: 600;
@@ -275,10 +274,10 @@ a.btn:hover {
     display: inline-block;
     margin-top: 10px;
     text-decoration: none;
-    border: 1px solid  rgb(211, 120, 131);
+    border: 1px solid rgb(211, 120, 131); /* Rose */
 }
 
 .return-home:hover {
-    background-color:  rgb(211, 120, 131);
+    background-color: rgb(211, 120, 131); /* Rose */
     color: #fff;
 }
