@@ -11,6 +11,7 @@
 body {
     background: white;
     font-family: 'Poppins', sans-serif;
+    background-color: rgb(211, 120, 131);
 }
 
 /* Header and Navigation Styles */
@@ -215,6 +216,7 @@ ul{
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
     transition: .2s ease-in-out;
+    background-color: #fff;
 }
 
 .food-items img {
