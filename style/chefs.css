@@ -152,9 +152,13 @@ h1 {
     text-align: left;
     flex: 1 0 30%; 
     max-width: 30%; 
-    
+    animation: animx 0.5s ease-in-out;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
-
+.chef-info:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 
 .chef-info img {
     max-width: 72px;
@@ -218,7 +222,14 @@ a {
     text-decoration: none;
 }
 
+nav ul li a {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
 
+nav ul li a:hover {
+    color: var(--nutmeg); 
+    background-color: var(--light-grey);
+}
 
 .social-icons li {
     display: inline-block;
@@ -235,18 +246,28 @@ a {
     font-size: 14px;
     margin-top: 20px;
 }
+@keyframes animx {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 @keyframes changeColor {
     0% {
         background-color: rgb(190, 100, 110); 
     }
     25% {
-        background-color: rgb(190, 172, 100); 
+        background-color: rgb(190, 160, 100); 
     }
     50% {
         background-color: rgb(223, 10, 10); 
     }
     75% {
-        background-color: rgb(100, 150, 190); 
+        background-color: rgb(179, 100, 190); 
     }
     100% {
         background-color: rgb(190, 100, 110); 
@@ -254,7 +275,7 @@ a {
 }
 
 body {
-    animation: changeColor 10s infinite; 
+    animation: changeColor 20s infinite; 
 }
 
 @media (max-width: 768px) {
