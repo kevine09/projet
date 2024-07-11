@@ -3,7 +3,7 @@ body {
     font-family: "Lato", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(190, 100, 110);;
+    background-color: rgb(190, 100, 110);
 }
 header {
     background: black;
@@ -152,7 +152,9 @@ h1 {
     text-align: left;
     flex: 1 0 30%; 
     max-width: 30%; 
+    
 }
+
 
 .chef-info img {
     max-width: 72px;
@@ -216,6 +218,8 @@ a {
     text-decoration: none;
 }
 
+
+
 .social-icons li {
     display: inline-block;
     margin: 0 5px;
@@ -231,6 +235,28 @@ a {
     font-size: 14px;
     margin-top: 20px;
 }
+@keyframes changeColor {
+    0% {
+        background-color: rgb(190, 100, 110); 
+    }
+    25% {
+        background-color: rgb(190, 172, 100); 
+    }
+    50% {
+        background-color: rgb(223, 10, 10); 
+    }
+    75% {
+        background-color: rgb(100, 150, 190); 
+    }
+    100% {
+        background-color: rgb(190, 100, 110); 
+    }
+}
+
+body {
+    animation: changeColor 10s infinite; 
+}
+
 @media (max-width: 768px) {
     .col-md-3 {
         width: 50%;
