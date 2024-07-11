@@ -277,7 +277,14 @@ input[type="radio"]:checked + .nav-dot {
         font-size: 14px;
         margin-top: 20px;
     }
-    /* Responsive Menu */
+    /* Responsive Footer Styles */
+@media (max-width: 768px) {
+    footer .col-md-3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+/* Responsive Menu */
 .menu-icon {
     display: none;
     font-size: 1.5rem;

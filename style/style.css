@@ -3,6 +3,7 @@
 body{
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
+   background-color: rgb(211, 120, 131);
 }
 header {
     background: black;
@@ -195,17 +196,32 @@ ul{
     
      
     
-.categories {
-    padding: 50px 20px;
-    background: #f2f2f2;
+    .categories {
+        padding: 50px 20px;
+        background: #f2f2f2;
+        background-color: black;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(253, 252, 252);
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
+    margin: 20px auto;
+    width: 80%;
+    }
 
-.category {
-    margin: 20px 0;
-    font-family: 'Times New Roman', Times, serif;
-}
+    .category {
+        margin: 20px 0;
+        font-family: 'Times New Roman', Times, serif;
+        border-radius: 10px;
+    box-shadow: 0 4px 8px white;
+    background-color: white;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    }
+    .categories p{
+        color:black;
+    }
 .categories h2{
     text-decoration: underline;
     font-family: 'Times New Roman', Times, serif;
@@ -213,10 +229,31 @@ ul{
 
 /* Recettes populaires */
 .popular-recipes {
-    padding: 50px 20px;
+    padding: 40px 20px;
+    border-radius: 10px;
     background: #fff;
     text-align: center;
+    background-color: #f7f1f1;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
     font-family: 'Times New Roman', Times, serif;
+}
+.recipe{
+    margin: 20px 0;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+box-shadow: 0 4px 8px rgb(8, 8, 8);
+background-color: rgb(3, 3, 3);
+text-align: center;
+margin: 20px auto;
+width: 80%;
+}
+.recipe p{
+    color:white;
 }
 .popular-recipes h2{
     text-decoration: underline;
@@ -227,6 +264,11 @@ ul{
     text-align: center;
     padding: 50px 20px;
     background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
 }
 
 /* General Styles */
@@ -252,20 +294,51 @@ ul{
     background: rgb(180, 100, 110); /* Change background color on hover */
 }
 
-/* Newsletter */
-.newsletter { /* Styles for the newsletter section */
-    position: relative; /* Allow positioning of child elements */
-    text-align: center; /* Center the text */
-}
 
-.newsletter a { /* Styles for links within the newsletter section */
-    color: rgb(180, 100, 110); /* Set link color */
-    padding: 50px 20px; /* Add padding around links */
-    text-align: center; /* Center link text */
-    position: relative; /* Allow positioning of child elements */
-    text-decoration-line: overline;
+.chefs {
+    background-color: #060606;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(253, 252, 252);
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
     font-family: 'Times New Roman', Times, serif;
 }
+
+.chefs-intro {
+    font-size: 18px;
+    color:white;
+    margin-bottom: 20px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.chefs-links {
+    list-style: none;
+    padding: 0;
+}
+
+.chefs-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.chefs-button {
+    display: inline-block;
+    background-color: rgb(211, 120, 131);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.chefs-button:hover {
+    background-color: rgb(186, 101, 112);
+}
+
 
 .container {
     width: 100%;
