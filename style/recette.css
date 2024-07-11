@@ -37,7 +37,7 @@ img {
 }
 
 body {
-    font-family: 'Outfit', sans-serif ;
+    font-family:  'Times New Roman', Times, serif;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5;
@@ -250,11 +250,9 @@ tr {
 
 }
 
-.container-2 {
+.container {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 2000px;
     background-color: black;
 }
 
@@ -267,48 +265,60 @@ tr {
 .col-md-3 {
     width: 25%;
     padding: 10px;
-    text-transform: capitalize;
 }
 
-.full-width {
-    width: 100%;
-}
-
- h3 {
+h3 {
     font-size: 20px;
     margin-bottom: 10px;
     color: rgb(211, 120, 131);
+    font-family: 'Times New Roman', Times, serif;
 }
 
- ul {
+ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
- li {
+li {
     margin-bottom: 5px;
 }
 
- a {
+a {
     color: white;
     text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .social-icons li {
     display: inline-block;
     margin: 0 5px;
+    
 }
 
+.social-icons li a {
+    font-size: 20px;
+    color: #333; 
+}
 .social-icons li a img {
-    width: 40px;
-    height: 40px;
+    width: 40px; /* Définir la largeur souhaitée */
+    height: 40px; /* Définir la hauteur souhaitée */
 }
 
 .copyright {
     text-align: center;
     font-size: 14px;
-    margin-top: 20px;
+    margin-top: 50px;
+    color: #f1f1f1;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Responsive Footer Styles */
+@media (max-width: 768px) {
+    footer .col-md-3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 500px) {
     .recette-wrapper {

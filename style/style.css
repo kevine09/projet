@@ -2,12 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 body{
     margin: 0;
-    font-family: "Lato", "Open Sans", sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 header {
     background: black;
     color: #fff;
     padding: 1rem 0;
+    position: relative;
+    z-index: 1000;
+    margin-bottom: 20px; /* Ajustez cette valeur selon vos besoins */
 }
 
 header .container {
@@ -41,6 +44,7 @@ ul{
     color: #fff;
     text-transform: capitalize;  /*Premiere lettre en majuscule*/
     text-align: right;
+    font-size: larger;
 }
 
 .wrapper li {              /*Tous les elements de liste dans le header*/
@@ -54,10 +58,11 @@ ul{
     font-size: 2rem;
     text-transform: uppercase;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
 }
 .logo{
     color: #fff;
+    padding: 15px;
+   
 }
 .logo span {
     color: rgb(211, 120, 131);
@@ -131,40 +136,79 @@ ul{
     .text{
         text-align: center;
     }
-    .carousel { /*animations avec les images*/
-        width: 100%;
-        overflow: hidden;
+    
+    .carousel {
+         width: 100%;
+         overflow: hidden;
+         margin: 20px auto 0 auto; /* Ajustez cette valeur selon vos besoins */
+    text-align: center;
+         }
+
+.carousel-container {
+     display: flex;
+      width: 185%;
+     /* Multipliez le nombre d'images par 100% pour permettre le défilement */ 
+     animation: slide 25s infinite; 
+    }
+
+.carousel-container img {
+     width: 20%; /*Répartit les images sur toute la largeur du conteneur */ 
+     width: 375px;
+     height: auto;
+     }
+
+@keyframes slide {
+     0% { transform: translateX(0); }
+      25% { transform: translateX(-100%); } 
+      50% { transform: translateX(-200%); }
+       75% { transform: translateX(-300%); } 
+       100% { transform: translateX(0); } 
+    }
+    .welcome-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgba(251, 249, 249, 0.8);
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        animation: fadeInOut 4s ease-in-out infinite;
+        margin-top: 100px;
     }
     
-    .carousel-container {
-        display: flex;
-        width: 50%;
-        animation: slide 15s infinite;
+    .welcome-text {
+        font-size: 2.5em;
+        margin: 0;
     }
     
-    .carousel-container img {
-        width: 50%;
-        height: auto;
+    .welcome-description {
+        font-size: 1.2em;
+        margin-top: 10px;
     }
     
-    @keyframes slide {
-        0% { transform: translateX(0); }
-        33.33% { transform: translateX(-100%); }
-        66.66% { transform: translateX(-200%); }
-        100% { transform: translateX(0); }
+    
+    @keyframes fadeInOut {
+        0%, 10%, 90%, 100% { opacity: 0; }
+        25%, 75% { opacity: 1; }
     }
-    /* Catégories de recettes */
+      
+    
+     
+    
 .categories {
     padding: 50px 20px;
     background: #f2f2f2;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .category {
     margin: 20px 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 .categories h2{
     text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* Recettes populaires */
@@ -172,9 +216,11 @@ ul{
     padding: 50px 20px;
     background: #fff;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 .popular-recipes h2{
     text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
 }
 /* Section Découvrir d'autres recettes */
 .discover-recipes {
@@ -186,7 +232,7 @@ ul{
 /* General Styles */
 .discover-recipes h2 { /* Styles for the "Discover Recipes" heading */
     margin-bottom: 20px; /* Add bottom margin */
-    font-family: Georgia, 'Times New Roman', Times, serif; /* Set font family for heading */
+    font-family:  'Times New Roman', Times, serif; /* Set font family for heading */
     color: rgb(211, 120, 131); /* Set heading color */
 }
 
@@ -197,7 +243,7 @@ ul{
     color: white; /* Set text color */
     text-decoration: none; /* Remove text decoration (underline) */
     text-transform: uppercase; /* Convert text to uppercase */
-    font-family: "Lato", "Open Sans", sans-serif; /* Set font family */
+    font-family: 'Times New Roman', Times, serif; /* Set font family */
     border-radius: 5px; /* Round the button corners */
     transition: background 0.3s ease; /* Add transition for background color change */
 }
@@ -218,11 +264,12 @@ ul{
     text-align: center; /* Center link text */
     position: relative; /* Allow positioning of child elements */
     text-decoration-line: overline;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 2000px;
     margin: 0 auto;
     padding: 20px;
     background-color: black;
@@ -243,6 +290,7 @@ h3 {
     font-size: 20px;
     margin-bottom: 10px;
     color: rgb(211, 120, 131);
+    font-family: 'Times New Roman', Times, serif;
 }
 
 ul {
@@ -258,6 +306,7 @@ li {
 a {
     color: white;
     text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .social-icons li {
@@ -278,7 +327,17 @@ a {
 .copyright {
     text-align: center;
     font-size: 14px;
-    margin-top: 20px;
+    margin-top: 50px;
+    color: #f1f1f1;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Responsive Footer Styles */
+@media (max-width: 768px) {
+    footer .col-md-3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 /* Responsive Menu */
 .menu-icon {

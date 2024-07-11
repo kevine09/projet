@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 body{
     margin: 0;
-    font-family: "Lato", "Open Sans", sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(211, 120, 131);
 }
 header {
     background: black;
     color: #fff;
     padding: 1rem 0;
+    position: relative;
+    z-index: 1000;
+    margin-bottom: 20px; /* Ajustez cette valeur selon vos besoins */
+
 }
 
 header .container {
@@ -40,6 +45,8 @@ ul{
     color: #fff;
     text-transform: capitalize;  /*Premiere lettre en majuscule*/
     text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
 }
 
 .wrapper li {              /*Tous les elements de liste dans le header*/
@@ -57,6 +64,7 @@ ul{
 }
 .logo{
     color: #fff;
+    padding: 15px;
 }
 .logo span {
     color: rgb(211, 120, 131);
@@ -121,12 +129,100 @@ ul{
       .dropdown-content a:hover {
         background-color: #f1f1f1;
       }
+     /* Styles pour le carrousel */
+.carousel {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    text-align: center;
+    margin: 20px auto 0 auto; /* Ajustez cette valeur selon vos besoins */
+    overflow: hidden;
+    text-align: center;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: auto;
+}
+
+.carousel-item {
+    width: 100%;
+    padding: 40px 20px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 300px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#slide1:checked ~ .carousel-wrapper #item1,
+#slide2:checked ~ .carousel-wrapper #item2,
+#slide3:checked ~ .carousel-wrapper #item3 {
+    display: flex;
+}
+
+.carousel-item h2 {
+    color: rgb(211, 120, 131);
+    font-size: 30px;
+}
+
+.carousel-item p {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.carousel-nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + .nav-dot {
+    background: #333;
+}
+
+/* Background images for each carousel item */
+#item1 {
+    background-image: url('../images/chef\ heureux.png');
+}
+
+#item2 {
+    background-image: url('../images/apprentis.png');
+}
+
+#item3 {
+    background-image: url('../images/pros.png');
+}
       .container {
         width: 100%;
         max-width: 1300px;
         margin: 0 auto;
         padding: 20px;
         background-color: black;
+    }
+    
+    .text{
+        text-align: center;
     }
     
     .row {
