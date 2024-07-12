@@ -51,7 +51,7 @@ ul{
 .wrapper li {              /*Tous les elements de liste dans le header*/
     list-style: none;    /*Enlever les points devant les elements de liste*/
     margin-right: 25px;  /* Espace entre les elements de liste*/
-   padding: auto;
+    padding: auto;
     text-align:right;
 }
 
