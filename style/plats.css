@@ -10,7 +10,7 @@
 
 body {
     background: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     background-color: rgb(211, 120, 131);
 }
 
@@ -343,6 +343,111 @@ footer .copyright {
     margin-left: auto;
     margin-right: auto;
 }
+
+footer .project-button {
+    display: block;
+    background-color: rgb(211, 120, 131);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(211, 120, 131); 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button-link:hover {
+    background-color: #0056b3; /* Changez cette couleur selon vos besoins */
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 1200px) {
+    header .container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .wrapper1, nav ul {
+        flex-direction: column;
+    }
+
+    .wrapper1 li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .search-section {
+        margin-right: 0;
+    }
+
+    .compte-button {
+        margin-top: 10px;
+    }
+
+    .compte-button .icon {
+        margin-left: 0;
+    }
+
+    .compte-button a {
+        justify-content: center;
+    }
+
+    .dropdown-content {
+        min-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-3 {
+        width: 100%;
+    }
+
+    .full-width {
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .search-section {
+        margin-bottom: 10px;
+    }
+
+    .compte-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .compte-button a {
+        justify-content: center;
+    }
+}
+
+
+
 /* Responsive Footer Styles */
 @media (max-width: 768px) {
     footer .col-md-3 {
@@ -350,6 +455,8 @@ footer .copyright {
         margin-bottom: 20px;
     }
 }
+
+
 
 
 

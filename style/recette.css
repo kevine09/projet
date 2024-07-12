@@ -248,70 +248,96 @@ tr {
     border-bottom: 1px solid var(--light-grey);
 }
 
-.container {
-    width: 100%;
-    max-width: 2000px;
-    background-color: black;
+footer {
+    background-color: black; /* Couleur de fond noire pour tout le pied de page */
+    padding: 20px 0; /* Ajout de padding en haut et en bas */
 }
 
-.row {
+
+footer .container {
+    width: 100%; /* Largeur de 100% pour couvrir toute la page */
+    max-width: 2000px;
+    margin: 0 auto; /* Centrer le contenu */
+    padding: 20px; /* Padding à l'intérieur du conteneur */
+    background-color: black;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.col-md-3 {
+footer .row {
+    width: 100%; /*Largeur de 100% pour s'étendre sur toute la largeur */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col-md-3 {
     width: 25%;
     padding: 10px;
 }
 
-h3 {
+footer h3 {
     font-size: 20px;
     margin-bottom: 10px;
     color: rgb(211, 120, 131);
     font-family: 'Times New Roman', Times, serif;
 }
 
-ul {
+footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-li {
+footer li {
     margin-bottom: 5px;
 }
 
-a {
+footer a {
     color: white;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.social-icons li {
+footer .social-icons li {
     display: inline-block;
     margin: 0 5px;
 }
 
-.social-icons li a {
+footer .social-icons li a {
     font-size: 20px;
-    color: #333;
+    color: #333; 
 }
 
-.social-icons li a img {
+footer .social-icons li a img {
     width: 40px; /* Définir la largeur souhaitée */
     height: 40px; /* Définir la hauteur souhaitée */
 }
 
-.copyright {
+footer .copyright {
     text-align: center;
     font-size: 14px;
     margin-top: 50px;
     color: #f1f1f1;
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Times New Roman', Times, serif;
 }
+
+footer .project-button {
+    display: block;
+    background-color: rgb(211, 120, 131);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
 .button-link {
     display: inline-block;
     padding: 10px 20px;
@@ -325,7 +351,6 @@ a {
 .button-link:hover {
     background-color: #0056b3; /* Changez cette couleur selon vos besoins */
 }
-
 /* Responsive Footer Styles */
 @media (max-width: 768px) {
     footer .col-md-3 {
@@ -333,6 +358,8 @@ a {
         margin-bottom: 20px;
     }
 }
+
+
 
 /* Responsive Adjustments for Smaller Screens */
 @media (max-width: 1200px) {
