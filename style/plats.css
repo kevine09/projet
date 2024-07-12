@@ -341,7 +341,22 @@ a {
     color: #f1f1f1;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Times New Roman', Times, serif;
 }
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(211, 120, 131); 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button-link:hover {
+    background-color: #0056b3; /* Changez cette couleur selon vos besoins */
+}
+
 /* Responsive Footer Styles */
 @media (max-width: 768px) {
     footer .col-md-3 {
