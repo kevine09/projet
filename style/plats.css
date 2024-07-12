@@ -1,4 +1,4 @@
-/* Utilisation de fonts personnalises*/
+/* Utilisation de fonts personnalises */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /* {
@@ -6,7 +6,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins, sans-serif';
-}*/
+} */
 
 body {
     background: white;
@@ -30,110 +30,111 @@ header .container {
     padding: 0 1rem;
 }
 
- .wrapper,nav ul {
-    display: flex; /*Utiliser en flexbox*/
-    justify-content: space-between; /*Allignement horizontal du contenu*/
+.wrapper, nav ul {
+    display: flex;
+    justify-content: space-between;
 }
 
-ul{
+ul {
     padding: 0;
 }
 
- .wrapper {
-    align-items: center; /*Alignement veritical du contenu*/
+.wrapper {
+    align-items: center;
 }
 
-.wrapper a {   /* Tous les liens qui se trouvent dans le header*/
-    text-decoration:dashed;  /* soulignage des liens*/
+.wrapper a {
+    text-decoration: dashed;
     color: #fff;
-    text-transform: capitalize;  /*Premiere lettre en majuscule*/
+    text-transform: capitalize;
     text-align: right;
 }
 
-.wrapper li {              /*Tous les elements de liste dans le header*/
-    list-style: none;    /*Enlever les points devant les elements de liste*/
-    margin-right: 25px;  /* Espace entre les elements de liste*/
-   padding: auto;
-    text-align:right;
-    font-size:larger;
+.wrapper li {
+    list-style: none;
+    margin-right: 25px;
+    padding: auto;
+    text-align: right;
+    font-size: larger;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.logo a {    /* Tous les liens dans le div du logo*/
+.logo a {
     font-size: 2rem;
     text-transform: uppercase;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #f1f1f1;
     text-decoration: none;
 }
-.logo{
+
+.logo {
     color: #fff;
     padding: 15px;
-   
 }
+
 .logo span {
     color: rgb(211, 120, 131);
 }
 
-/*.search-section .wrapper{ /*la zone de recherche de recettes*/
-    .search-section{ /*la zone de reserche de recettes*/
-        text-align: right;
-        padding: 5px;
-        margin-right: 25px;
+.search-section {
+    text-align: right;
+    padding: 5px;
+    margin-right: 25px;
 }
-    
-    .icon{
-        width: 15px; /* Ajustez la taille de l'icône selon les besoins */
-        height: 15px; /* Ajustez la taille de l'icône selon les besoins */
-        margin-right: 0rem; /* Espace entre l'icône et le texte */
-        vertical-align: middle; /* Centre verticalement l'icône avec le texte */
-        
-    }
-    .compte-button {
-        position: relative;
-        display: inline-block;
-        cursor: pointer;
-        background-color: rgb(211, 120, 131);
-      }
-      
-      .compte-button a {
-        text-decoration: none;
-        color: rgb(5, 5, 5); /* Couleur du texte Contact */
-        display: flex;
-        align-items: center; /* Aligner le texte et l'icône verticalement */
-      }
-      
-      .compte-button .icon {
-        width: 20px;
-        height: 20px;
-        margin-left: 5px; /* Espacement entre le texte et l'icône */
-        background-color: rgb(211, 120, 131);
-      }
-      
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: rgb(5, 4, 4);
-        min-width: 100px;
-        box-shadow: 0 2px 5px rgb(7, 7, 7);
-        z-index: 1;
-      }
-      
-      .compte-button:hover .dropdown-content {
-        display: block;
-      }
-      
-      .dropdown-content a {
-        display: block;
-        padding: 10px;
-        text-decoration: none;
-        background-color: rgb(211, 120, 131);
-        color: #0d0d0d;
-      }
-      
-      .dropdown-content a:hover {
-        background-color: #f1f1f1;
-      }
+
+.icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 0rem;
+    vertical-align: middle;
+}
+
+.compte-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgb(211, 120, 131);
+}
+
+.compte-button a {
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    display: flex;
+    align-items: center;
+}
+
+.compte-button .icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    background-color: rgb(211, 120, 131);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(5, 4, 4);
+    min-width: 100px;
+    box-shadow: 0 2px 5px rgb(7, 7, 7);
+    z-index: 1;
+}
+
+.compte-button:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(211, 120, 131);
+    color: #0d0d0d;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
 /* Responsive Navigation */
 .nav-toggle {
     display: none;
@@ -151,8 +152,8 @@ ul{
 
 @media (max-width: 768px) {
     .wrapper, nav ul {
-        display: none; /* Hide navigation links */
-        flex-direction: column; /* Stack them vertically */
+        display: none;
+        flex-direction: column;
         width: 100%;
     }
 
@@ -277,7 +278,7 @@ h1 {
 }
 
 /* Footer Styles */
-.container {
+footer .container {
     width: 100%;
     max-width: 2000px;
     margin: 0 auto;
@@ -285,63 +286,62 @@ h1 {
     background-color: black;
 }
 
-.row {
+footer .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.col-md-3 {
+footer .col-md-3 {
     width: 25%;
     padding: 10px;
 }
 
-h3 {
+footer h3 {
     font-size: 20px;
     margin-bottom: 10px;
     color: rgb(211, 120, 131);
     font-family: 'Times New Roman', Times, serif;
 }
 
-ul {
+footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-li {
+footer li {
     margin-bottom: 5px;
 }
 
-a {
+footer a {
     color: white;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.social-icons li {
+footer .social-icons li {
     display: inline-block;
     margin: 0 5px;
-    
 }
 
-.social-icons li a {
+footer .social-icons li a {
     font-size: 20px;
     color: #333; 
 }
-.social-icons li a img {
-    width: 40px; /* Définir la largeur souhaitée */
-    height: 40px; /* Définir la hauteur souhaitée */
+
+footer .social-icons li a img {
+    width: 40px;
+    height: 40px;
 }
 
-.copyright {
+footer .copyright {
     text-align: center;
     font-size: 14px;
     margin-top: 50px;
     color: #f1f1f1;
-    margin-left: auto;
-    margin-right: auto;
 }
+
 /* Responsive Footer Styles */
 @media (max-width: 768px) {
     footer .col-md-3 {
@@ -349,7 +349,6 @@ a {
         margin-bottom: 20px;
     }
 }
-
 
 
 

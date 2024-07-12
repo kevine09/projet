@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -15,16 +15,16 @@
     --dark-charcoal: hsl(24, 5%, 18%);
 }
 
- h1, h2, h3, h4 {
+h1, h2, h3, h4 {
     line-height: 1.2;
     font-family: 'Young Serif', serif;
-    font-size:  1.5rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: var(--nutmeg);
     margin-bottom: 1.75rem;
 }
 
- ul, ol{
+ul, ol {
     padding: 0 1rem;
 }
 
@@ -33,18 +33,17 @@ img {
     max-width: 100%;
     font-style: italic;
     color: var(--dark-raspberry);
-    
 }
 
 body {
-    font-family:  'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5;
     color: var(--wenge-brown);
-    background-color: rgb(190, 100, 110);;
-
+    background-color: rgb(190, 100, 110);
 }
+
 header {
     background: black;
     color: #fff;
@@ -59,85 +58,86 @@ header .container {
     margin: 0 auto;
     padding: 0 1rem;
 }
+
 header h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
 
- .wrapper1,nav ul {
+.wrapper1, nav ul {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
-ul{
+ul {
     padding: 0;
 }
 
- .wrapper1 {
-    align-items: center; 
+.wrapper1 {
+    align-items: center;
 }
 
-.wrapper1 a {   
-    text-decoration:dashed;  
+.wrapper1 a {
+    text-decoration: dashed;
     color: #fff;
-    text-transform: capitalize;  
+    text-transform: capitalize;
     text-align: right;
 }
 
-.wrapper1 li {              
-    list-style: none;   
-    margin-right: 25px;  
-    text-align:right;
+.wrapper1 li {
+    list-style: none;
+    margin-right: 25px;
+    text-align: right;
 }
 
-.logo a {    
+.logo a {
     font-size: 2rem;
     text-transform: uppercase;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
 }
-.logo{
+
+.logo {
     color: #fff;
 }
+
 .logo span {
     color: rgb(211, 120, 131);
 }
 
-
-.search-section{ 
+.search-section {
     text-align: right;
     padding: 5px;
     margin-right: 25px;
 }
-    
-.icon{
-    width: 15px; 
-    height: 15px; 
-    margin-right: 0rem; 
-    vertical-align: middle; 
-        
+
+.icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 0rem;
+    vertical-align: middle;
 }
+
 .compte-button {
     position: relative;
     display: inline-block;
     cursor: pointer;
     background-color: rgb(211, 120, 131);
 }
-      
+
 .compte-button a {
     text-decoration: none;
-    color: rgb(5, 5, 5); 
+    color: rgb(5, 5, 5);
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
-      
+
 .compte-button .icon {
     width: 20px;
     height: 20px;
-    margin-left: 5px; 
+    margin-left: 5px;
     background-color: rgb(211, 120, 131);
 }
-      
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -146,11 +146,11 @@ ul{
     box-shadow: 0 2px 5px rgb(7, 7, 7);
     z-index: 1;
 }
-      
+
 .compte-button:hover .dropdown-content {
     display: block;
 }
-      
+
 .dropdown-content a {
     display: block;
     padding: 10px;
@@ -159,23 +159,24 @@ ul{
     color: #0d0d0d;
     text-transform: capitalize;
 }
-      
+
 .dropdown-content a:hover {
     background-color: #f1f1f1;
 }
 
 .recette-title {
-font-size: 2.5rem;
-color: var(--dark-charcoal);
+    font-size: 2.5rem;
+    color: var(--dark-charcoal);
 }
-.prep-title{
+
+.prep-title {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--dark-raspberry);
     margin-bottom: .5rem;
 }
 
-span{
+span {
     font-weight: 700;
 }
 
@@ -194,7 +195,7 @@ li::marker {
     font-weight: 600;
 }
 
-.wrapper{
+.wrapper {
     display: grid;
     place-items: center;
 }
@@ -207,14 +208,13 @@ li::marker {
     background: var(--white);
 }
 
-.recette-img{
+.recette-img {
     border-radius: .8rem;
     margin-bottom: 2.5rem;
     width: 100%;
     max-width: 600px;
     height: auto;
     object-fit: contain;
-
 }
 
 section {
@@ -239,7 +239,6 @@ hr {
 table {
     border-collapse: collapse;
     width: 100%;
-
 }
 
 tr {
@@ -247,7 +246,6 @@ tr {
     grid-template-columns: repeat(2, 1fr);
     padding: 1rem;
     border-bottom: 1px solid var(--light-grey);
-
 }
 
 .container {
@@ -293,13 +291,13 @@ a {
 .social-icons li {
     display: inline-block;
     margin: 0 5px;
-    
 }
 
 .social-icons li a {
     font-size: 20px;
-    color: #333; 
+    color: #333;
 }
+
 .social-icons li a img {
     width: 40px; /* Définir la largeur souhaitée */
     height: 40px; /* Définir la hauteur souhaitée */
@@ -313,6 +311,7 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
+
 /* Responsive Footer Styles */
 @media (max-width: 768px) {
     footer .col-md-3 {
@@ -320,6 +319,65 @@ a {
         margin-bottom: 20px;
     }
 }
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 1200px) {
+    header .container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .wrapper1, nav ul {
+        flex-direction: column;
+    }
+
+    .wrapper1 li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .search-section {
+        margin-right: 0;
+    }
+
+    .compte-button {
+        margin-top: 10px;
+    }
+
+    .compte-button .icon {
+        margin-left: 0;
+    }
+
+    .compte-button a {
+        justify-content: center;
+    }
+
+    .dropdown-content {
+        min-width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .recette-wrapper {
+        padding: 1rem;
+        margin: 4rem 0;
+    }
+
+    .recette-img {
+        margin-bottom: 1.5rem;
+    }
+
+    .temps-preparation {
+        padding: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 500px) {
     .recette-wrapper {
         margin: 0;
@@ -332,7 +390,7 @@ a {
     }
 
     .recette-container {
-        padding: 0 1.75rem;
+        padding: 0 1rem;
     }
 
     .recette-title {
@@ -340,28 +398,39 @@ a {
     }
 }
 
-@media (max-width: 768px) {
-    .col-md-3 {
-        width: 50%;
-    }
-
+@media (max-width: 480px) {
     .row {
         flex-direction: column;
         align-items: center;
     }
 
-    .full-width {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
     .col-md-3 {
         width: 100%;
     }
 
     .full-width {
         width: 100%;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .search-section {
+        margin-bottom: 10px;
+    }
+
+    .compte-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .compte-button a {
+        justify-content: center;
     }
 }
 
