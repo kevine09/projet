@@ -256,9 +256,9 @@ footer .social-icons li a img {
 footer .copyright {
     text-align: center;
     font-size: 14px;
-    /*margin-top: 50px;*/
+    margin-top: 50px;
     color: #f1f1f1;
-    width: 100%;
+    margin-left:920px ;
 }
 
 footer .project-button-container {
