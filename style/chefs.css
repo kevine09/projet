@@ -258,10 +258,14 @@ footer .social-icons li a img {
 
 footer .copyright {
     text-align: center;
+    color: white;
     font-size: 14px;
-    margin-top: 50px;
-    color: #f1f1f1;
-    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 920px;
+}
+.projet {
+    text-align: center;
+    margin-left: 920px;
 }
 
 footer .project-button {
