@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
-    padding: 0;
     background-color: rgb(190, 100, 110);
 }
 
@@ -11,6 +10,9 @@ header {
     background: black;
     color: #fff;
     padding: 1rem 0;
+    position: relative;
+    z-index: 1000;
+    margin-bottom: 20px;
 }
 
 header .container {
@@ -45,6 +47,7 @@ ul {
     color: #fff;
     text-transform: capitalize;
     text-align: right;
+    font-size: larger;
 }
 
 .wrapper li {
@@ -61,6 +64,7 @@ ul {
 
 .logo {
     color: #fff;
+    padding: 15px
 }
 
 .logo span {
@@ -289,7 +293,7 @@ footer .project-button {
 }
 
 .button-link:hover {
-    background-color: #0056b3; /* Changez cette couleur selon vos besoins */
+    background-color: #0056b3;
 }
 @keyframes animx {
     from {
@@ -323,32 +327,36 @@ footer .project-button {
 body {
     animation: changeColor 20s infinite;
 }
+.menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
 
-@media screen and (max-width: 500px) {
-    .wrapper,
-    .header-right {
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav ul.menu {
+        display: none;
         flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .header-right li {
-        margin: 0;
         width: 100%;
+        background: black;
     }
 
-    .wrapper a {
-        float: none;
+    nav ul.menu li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu-icon {
         display: block;
-        text-align: left;
     }
 
-    .search-section {
-        text-align: right;
-        margin-right: 0;
-    }
-    .chef-info {
-        flex: 1 0 45%;
-        max-width: 45%;
+    #menu-toggle:checked + .menu-icon + nav ul.menu {
+        display: flex;
     }
 }
 
@@ -359,10 +367,10 @@ body {
     }
 }
 
-
 @media (max-width: 768px) {
-    .col-md-3 {
-        width: 50%;
+    footer .col-md-3 {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 
@@ -446,6 +454,7 @@ body {
         justify-content: center;
     }
 }
+
 
 
 
