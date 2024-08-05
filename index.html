@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recettes</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo"><a href="#">Delices <span>Gourmets</span></a></div>
+            <nav>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                <ul class="menu">
+                    <li> <a href="index.html"> Accueil</a></li>
+                    <li><a href="html/plats.html">Nos plats</a></li>
+                    <li> <a href="html/about.html"> A propos de nous</a></li>
+                    <li><a href="html/contact.html">contact</a></li>
+                    <li class="compte-button">
+                        <a href="#">
+                            <span>compte</span>
+                            <img src="images/compte.png" alt="compte" class="icon">
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="html/connexion.html">Se connecter</a>
+                            <a href="html/inscription.html">S'inscrire</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div><!-- section recherche d'une recette-->
+        <section class="search-section">
+            <input type="text" id="searchBar" placeholder="Rechercher une recette...">
+        </section>
+    </header>
+    <main>
+        <div>
+            <section class="carousel">
+                <div class="carousel-container">
+                            <img src="./images/tarte.png" alt="tarte">
+                                <img src="./images/truite.png" alt="truite">
+                                <img src="./images/spaghetti.png" alt="spaghetti">
+                                <img src="./images/tarte au citron.png" alt="tarte au citron">
+                                <img src="./images/saucisson gateau.png" alt="gateau saucisson">
+                                <img src="./images/saucisse.png" alt="saucisse">
+                                <img src="./images/poulet mediterane.png" alt="poulet">
+                                <img src="./images/pommes espagnoles.png" alt="pommes espagnoles">
+                            <img src="./images/paella.png" alt="paella">
+                            <img src="./images/nouille.png" alt="nouille">
+                            <img src="./images/gateau.png" alt="gateau">
+                            <img src="./images/cookies.png" alt="cookies">
+                            <img src="./images/coeur coulant.png" alt="coeur coulant">
+                            <img src="./images/boulette pane.png" alt="boulette">
+                            <img src="./images/thiep.png" alt="thiep">
+                            <img src="./images/brochette.png" alt="brochette">
+                            <img src="./images/gateau eclair.png" alt="gateau eclair">
+                            <img src="./images/sandwich club.png" alt="sandwich club">
+                            <img src="./images/steak.png" alt="steak">
+                            <img src="./images/poulet roti.png" alt="poulet roti">
+                            <img src="./images/pizza.png" alt="pizza">
+                            <img src="./images/donuts.png" alt="donuts">
+                            <img src="./images/gauffres.png" alt="gauffres">
+                            <img src="./images/poissonbraise.png" alt="poisson">
+                        </div>
+            </section>
+            <div class="welcome-overlay">
+                <h1 class="welcome-text">Bienvenue chez Délices Gourmets</h1>
+                <p class="welcome-description">Découvrez nos recettes délicieuses et faciles à suivre
+                </p>
+            </div>
+            <!-- Catégories de recettes -->
+            <section class="categories">
+                <h2>Catégories de Recettes</h2>
+                <div class="category">
+                   <h3>Entrées</h3>
+                    <p>Les entrées sont l’introduction parfaite à un repas exquis.
+                        Découvrez nos délicieuses entrées,<br> préparées avec des ingrédients frais et de saison pour
+                        éveiller vos papilles.</p>
+                </div>
+                <div class="category">
+                    <h3>Plats principaux</h3>
+                    <p>Nos plats principaux sont conçus pour être <br> le cœur de votre repas,
+                        offrant une variété de saveurs et de textures qui satisferont tous les goûts.</p>
+                </div>
+                <div class="category">
+                    <h3>Desserts</h3>
+                    <p>Terminez votre repas sur une note sucrée <br>avec nos desserts,
+                        chacun d’eux étant une célébration de la gourmandise et de la finesse.</p>
+                </div>
+            </section>
+
+            <!-- Recettes populaires -->
+            <section class="popular-recipes">
+                <h2>Recettes Populaires</h2>
+                <div class="recipe">
+                    <h3>poulet au curry coco</h3>
+                    <p>Un plat exotique et parfumé,
+                        avec des morceaux de poulet tendres <br> cuits dans une sauce au lait de coco et aux épices.</p>
+                </div>
+                <div class="recipe">
+                    <h3>tiramisu classique</h3>
+                    <p>Le tiramisu est le dessert italien par excellence,
+                        avec sa texture <br>crémeuse et ses saveurs de café et de cacao qui se marient à merveille.</p>
+                </div>
+            </section>
+            <section class="discover-recipes">
+                <h2>Envie de plus de recettes ?</h2>
+                <a href="html/plats.html" class="discover-button">Découvrir d'autres recettes</a>
+            </section>
+            <!-- pages chefs -->
+            <section class="chefs">
+                <p class="chefs-intro">Vous souhaitez des instructions plus détaillées et personnalisées ?<br> Consultez nos chefs experts !</p>
+                <ul class="chefs-links">
+                    <li><a href="html/chefs.html" class="chefs-button">Accéder à notre repertoire de chefs</a></li>
+                </ul>
+            </section>
+</div>
+    </main>
+    <footer>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="html/commentaires.html">suggestions et commentaires</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">centre d'aide</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+
+                    <h3>Delices Gourmets</h3>
+                    <ul>
+                        <li><a href="#">Life at Delices Gourmets</a></li>
+                        <li><a href="#">carrierres</a></li>
+                        <li><a href="#">histoires des consommateurs</a></li>
+                        <li><a href="#">Platform Status</a></li>
+                        <li><a href="#">DEI</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="html/connexion.html">s'inscrire</a></li>
+                        <li><a href="#">Contactez-Nous</a></li>
+                        <li><a href="#">regarder une demo</a></li>
+                        <li><a href="html/chefs.html">se referrer a un chef</a></li>
+                        <li><a href="#">devenir partenaire</a></li>
+                        <li><a href="#">termes de references</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Connect</h3>
+                    <ul class="social-icons">
+                        <li><a href="#"><img src="images/insta.png" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="images/twitter.png" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="images/facebook.png" alt="Facebook"></a></li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="copyright">
+                            &copy; 2024 BentoBox <br> design by kevine,gloria,johnathan,bouba
+                         </p>
+                         <div class="projet">
+                            <a href="https://github.com/kevine09/projet.git" class="button-link">Consultez notre projet ici</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>

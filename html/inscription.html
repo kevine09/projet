@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un Compte</title>
+    <link rel="stylesheet" href="../style/inscription.css">
+    <script src="../script/inscription.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h1>Créer un Compte</h1>
+            <div class="form-group">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Téléphone :</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="address">Adresse :</label>
+                <textarea id="address" name="address" rows="4"></textarea>
+            </div>
+            <button type="submit">S'enregistrer</button>
+            <a href="../index.html">Retour à la page d'accueil</a>
+        </form>
+    </div>
+</body>
+</html>

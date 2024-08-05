@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color: rgb(190, 100, 110);
+}
+
+header {
+    background: black;
+    color: #fff;
+    padding: 1rem 0;
+    position: relative;
+    z-index: 1000;
+    margin-bottom: 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.wrapper, nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    padding: 0;
+}
+
+.wrapper {
+    align-items: center;
+}
+
+.wrapper a {
+    text-decoration: dashed;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: right;
+    font-size: larger;
+}
+
+.wrapper li {
+    list-style: none;
+    margin-right: 25px;
+    text-align: right;
+}
+
+.logo a {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo {
+    color: #fff;
+    padding: 15px
+}
+
+.logo span {
+    color: rgb(211, 120, 131);
+}
+
+.search-section {
+    text-align: right;
+    padding: 5px;
+    margin-right: 25px;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 0rem;
+    vertical-align: middle;
+}
+
+.compte-button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgb(211, 120, 131);
+}
+
+.compte-button a {
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    display: flex;
+    align-items: center;
+}
+
+.compte-button .icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    background-color: rgb(211, 120, 131);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(5, 4, 4);
+    min-width: 100px;
+    box-shadow: 0 2px 5px rgb(7, 7, 7);
+    z-index: 1;
+}
+
+.compte-button:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(211, 120, 131);
+    color: #0d0d0d;
+    text-transform: capitalize;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.container-3 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.chef-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.chef-info {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    flex: 1 0 30%;
+    max-width: 30%;
+    animation: animx 0.5s ease-in-out;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.chef-info:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.chef-info img {
+    max-width: 72px;
+    height: auto;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+.chef-info h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+.chef-info p {
+    font-size: 1em;
+    color: #666;
+    margin: 5px 0;
+}
+
+footer {
+    background-color: black; /* Couleur de fond noire pour tout le pied de page */
+    padding: 20px 0; /* Ajout de padding en haut et en bas */
+}
+
+footer .container-2 {
+    width: 100%; /* Largeur de 100% pour couvrir toute la page */
+    max-width: 2000px;
+    margin: 0 auto; /* Centrer le contenu */
+    padding: 0 20px; /* Padding à l'intérieur du conteneur */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .row {
+    width: 100%; /* Largeur de 100% pour s'étendre sur toute la largeur */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col-md-3 {
+    width: 25%;
+    padding: 10px;
+}
+
+footer h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(211, 120, 131);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin-bottom: 5px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer .social-icons li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+footer .social-icons li a {
+    font-size: 20px;
+    color: #333; 
+}
+
+footer .social-icons li a img {
+    width: 40px; /* Définir la largeur souhaitée */
+    height: 40px; /* Définir la hauteur souhaitée */
+}
+
+footer .copyright {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-left: 920px;
+}
+.projet {
+    text-align: center;
+    margin-left: 920px;
+}
+
+footer .project-button {
+    display: block;
+    background-color: rgb(211, 120, 131);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(211, 120, 131); 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button-link:hover {
+    background-color: #0056b3;
+}
+@keyframes animx {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: rgb(190, 100, 110);
+    }
+    25% {
+        background-color: rgb(190, 160, 100);
+    }
+    50% {
+        background-color: rgb(223, 10, 10);
+    }
+    75% {
+        background-color: rgb(179, 100, 190);
+    }
+    100% {
+        background-color: rgb(190, 100, 110);
+    }
+}
+
+body {
+    animation: changeColor 20s infinite;
+}
+.menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav ul.menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: black;
+    }
+
+    nav ul.menu li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menu-toggle:checked + .menu-icon + nav ul.menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .chef-info {
+        flex: 1 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    footer .col-md-3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .col-md-3 {
+        width: 100%;
+    }
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 1200px) {
+    header .container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .wrapper1, nav ul {
+        flex-direction: column;
+    }
+
+    .wrapper1 li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .search-section {
+        margin-right: 0;
+    }
+
+    .compte-button {
+        margin-top: 10px;
+    }
+
+    .compte-button .icon {
+        margin-left: 0;
+    }
+
+    .compte-button a {
+        justify-content: center;
+    }
+
+    .dropdown-content {
+        min-width: 150px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-3 {
+        width: 100%;
+    }
+
+    .full-width {
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .search-section {
+        margin-bottom: 10px;
+    }
+
+    .compte-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .compte-button a {
+        justify-content: center;
+    }
+}
+
+
+
+
+
